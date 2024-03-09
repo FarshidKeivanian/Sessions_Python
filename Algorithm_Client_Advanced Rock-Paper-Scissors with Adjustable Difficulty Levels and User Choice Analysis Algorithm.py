@@ -2,32 +2,40 @@ import socket
 
 def start_client():
     ports_to_try = [12345, 54321, 65432]  # Should match the server's ports
-    connection_established = False
+    connected = False
 
     for port in ports_to_try:
         try:
-            s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            s.connect(('localhost', port))
-            print(f"Connected to server on port {port}")
-            connection_established = True
-            break  # Exit the loop once a connection is established
+            client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            client_socket.connect(('localhost', port))
+            print(f"Connected to server on port {port}.")
+            connected = True
+            break  # Exit loop on successful connection
         except ConnectionRefusedError:
             print(f"Could not connect to server on port {port}. Trying next port...")
-            continue  # Try the next port
-    if not connection_established:
-        print("Failed to connect to server. Please check the server status and port availability.")
+
+    if not connected:
+        print("Failed to connect to the server. Please ensure the server is running and ports are correct.")
         return
 
+    print("Welcome to Rock-Paper-Scissors! Type 'exit' to quit.")
     try:
         while True:
-            message = input("Enter your choice or 'exit' to quit: ")
-            if message.lower() == 'exit':
+            user_input = input("Choose rock, paper, or scissors: ").lower()
+            if user_input not in ["rock", "paper", "scissors", "exit"]:
+                print("Invalid choice. Please choose rock, paper, scissors, or type 'exit' to quit.")
+                continue
+            elif user_input == "exit":
                 break
-            s.sendall(message.encode())
-            data = s.recv(1024)
-            print(f"Received from server: {data.decode()}")
+
+            client_socket.sendall(user_input.encode())
+            response = client_socket.recv(1024).decode()
+            print(response)
+    except Exception as e:
+        print(f"An error occurred: {e}")
     finally:
-        s.close()
+        client_socket.close()
+        print("Disconnected from server.")
 
 if __name__ == '__main__':
     start_client()
