@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import requests
 from datetime import datetime
 import tkinter as tk
@@ -55,10 +49,3 @@ def get_weather_forecast_gui():
 
 if __name__ == "__main__":
     get_weather_forecast_gui()
-
-
-# In[ ]:
-
-
-
-
