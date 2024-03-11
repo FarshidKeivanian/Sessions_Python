@@ -1,3 +1,5 @@
+# Link to download dataset: ttps://www.kaggle.com/datasets/new-york-city/ny-parking-violations-issued?resource=download 
+
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, count
 
