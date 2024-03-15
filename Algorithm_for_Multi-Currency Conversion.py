@@ -1,7 +1,6 @@
 import requests
 
 def get_conversion_rate(from_currency, to_currency):
-    api_key = 'YOUR_API_KEY' # Insert your API key here
     url = f'https://api.exchangerate-api.com/v4/latest/{from_currency}'
     response = requests.get(url)
     data = response.json()
