@@ -1,3 +1,6 @@
+# pip install --upgrade pip
+# import scipy
+
 # Import necessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +16,8 @@ gpas = np.random.normal(loc=3.0, scale=0.5, size=30).clip(0, 4)
 # Calculate mean, median, mode, and standard deviation
 mean_gpa = np.mean(gpas)
 median_gpa = np.median(gpas)
-mode_gpa = stats.mode(gpas)[0][0]
+mode_result = stats.mode(gpas)  # Use stats.mode to get the mode result
+mode_gpa = mode_result.mode  # Correctly access the mode value
 std_dev_gpa = np.std(gpas)
 
 # Print the calculated values
