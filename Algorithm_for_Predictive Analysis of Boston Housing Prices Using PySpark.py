@@ -27,6 +27,7 @@ schema = StructType([
 ])
 
 # Load dataset
+# Ensure to use your path
 df = spark.read.csv("D:\boston_house_prices_corrected.csv", schema=schema, sep=",")
 
 # Show the data (for verification)
