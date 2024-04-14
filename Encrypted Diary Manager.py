@@ -32,5 +32,5 @@ def read_diary_entry(entry_title):
         return "Diary entry not found!"
 
 # Usage example:
-# save_diary_entry('First Day', 'Today I had piano class.')
-# print(read_diary_entry('First Day'))
+save_diary_entry('First Day', 'Today I had piano class.')
+print(read_diary_entry('First Day'))
