@@ -2,6 +2,7 @@ from sklearn import datasets
 from sklearn.cluster import KMeans
 from sklearn.metrics import confusion_matrix, accuracy_score
 import seaborn as sns
+import matplotlib.pyplot as plt  # Corrected import statement
 
 # Step 1: Load the Iris dataset
 iris = datasets.load_iris()
