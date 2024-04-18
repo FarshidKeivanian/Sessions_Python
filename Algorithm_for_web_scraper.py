@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 
 # The URL of the website we want to scrape data from
 url = 'https://www.abc.net.au/news'
+# url = 'https://7news.com.au/politics'
 
 # Sending an HTTP GET request to the website
 response = requests.get(url)
