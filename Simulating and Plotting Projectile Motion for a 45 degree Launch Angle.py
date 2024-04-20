@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def projectile_motion(v0, angle, time):
-    g = 9.81  # acceleration due to gravity (m/s^2)
+    g = 9.81  # Acceleration due to gravity (m/s^2)
     angle_rad = np.radians(angle)
     
     # Horizontal and vertical components of initial velocity
@@ -16,11 +16,14 @@ def projectile_motion(v0, angle, time):
     return x, y
 
 # Initial conditions
-v0 = 50  # initial velocity (m/s)
-angle = 45  # launch angle (degrees)
+v0 = 50  # Initial velocity (m/s)
+angle = 45  # Launch angle (degrees)
 
-# Generate time points
-t = np.linspace(0, 10, num=100)
+# Calculate time of flight (the time it takes for the projectile to land)
+t_flight = 2 * v0 * np.sin(np.radians(angle)) / g
+
+# Generate time points up to the calculated time of flight
+t = np.linspace(0, t_flight, num=100)
 
 # Calculate trajectory
 trajectory = np.array([projectile_motion(v0, angle, ti) for ti in t])
