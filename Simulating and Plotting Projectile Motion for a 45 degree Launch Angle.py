@@ -18,6 +18,7 @@ def projectile_motion(v0, angle, time):
 # Initial conditions
 v0 = 50  # Initial velocity (m/s)
 angle = 45  # Launch angle (degrees)
+g = 9.81  # Define gravity here for use in time of flight calculation
 
 # Calculate time of flight (the time it takes for the projectile to land)
 t_flight = 2 * v0 * np.sin(np.radians(angle)) / g
