@@ -6,7 +6,7 @@ import tkinter as tk
 from tkinter import simpledialog, messagebox
 
 # Load the dataset from the uploaded file path
-data = pd.read_csv('/mnt/data/boston_house_prices_corrected.csv')
+data = pd.read_csv('D:/boston_house_prices_corrected.csv')
 
 # Split data into features and target
 features = data.columns[:-1]  # Extract feature names
