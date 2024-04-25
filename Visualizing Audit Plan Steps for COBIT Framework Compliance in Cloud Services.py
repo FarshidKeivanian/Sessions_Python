@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt  # Importing the necessary library
+
 # Steps in the Audit Plan
 steps = [
     "Define Audit Objectives",
