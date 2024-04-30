@@ -14,7 +14,10 @@ degree_centrality = nx.degree_centrality(G)
 # Plotting the graph with node labels and their degree centrality
 plt.figure(figsize=(8, 6))
 pos = nx.spring_layout(G)  # uses a spring layout for aesthetically pleasing node placement
-nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=2500, edge_color='gray', linewidths=1, font_size=15)
+
+# Adjust node size based on degree centrality (scaled by 5000 for visibility)
+node_size = [5000 * centrality for centrality in degree_centrality.values()]
+nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=node_size, edge_color='gray', linewidths=1, font_size=15)
 
 # Annotating nodes with their degree centrality
 labels = {node: f"{node}\nDC: {centrality:.2f}" for node, centrality in degree_centrality.items()}
