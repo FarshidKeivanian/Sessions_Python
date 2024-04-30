@@ -1,3 +1,5 @@
+#pip install networkx python-louvain matplotlib
+
 import networkx as nx
 import community as community_louvain
 import matplotlib.pyplot as plt
