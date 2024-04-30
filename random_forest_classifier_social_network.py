@@ -32,47 +32,40 @@ connected = np.random.randint(0, 2, size=len(user1))
 # Create a DataFrame
 data = pd.DataFrame({'user1': user1, 'user2': user2, 'connected': connected})
 
-# Save the dataset to CSV
-data.to_csv('synthetic_social_network.csv', index=False)
-
-# Step 1: Load the dataset
+# Load the dataset
 data = pd.read_csv('synthetic_social_network.csv')
 
-# Step 2: Data Preprocessing (if necessary)
-
-# Step 3: Feature Engineering
-
-# Step 4: Split the data into training and testing sets
-X = data.drop('connected', axis=1)  # Assuming 'connected' is the target variable
+# Split the data into training and testing sets
+X = data.drop('connected', axis=1)
 y = data['connected']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Step 5: Algorithm Selection
-model = RandomForestClassifier()
+# Reset index for X_test
+X_test = X_test.reset_index(drop=True)
 
-# Step 6: Train the algorithm
+# Train the Random Forest Classifier
+model = RandomForestClassifier()
 model.fit(X_train, y_train)
 
-# Step 7: Evaluate Performance
+# Evaluate performance
 y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
-# Step 8: Tune Hyperparameters (if necessary)
-
-# Step 9: Make Predictions (on new data, if available)
-# Assuming you want to visualize the predicted connections on a graph
-# Create a graph
+# Visualize the predicted connections
 G = nx.Graph()
 
-# Add edges from the test set
+# Add edges
 for index, row in X_test.iterrows():
-    if y_pred[index] == 1:  # If the prediction is a connection
+    if y_pred[index] == 1:
         G.add_edge(row['user1'], row['user2'])
 
+# Set up graph layout
+pos = nx.kamada_kawai_layout(G)
+
 # Draw the graph
-pos = nx.spring_layout(G)
-nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=1500, edge_color='black', linewidths=1, font_size=15)
+plt.figure(figsize=(12, 12))  # Increase figure size
+nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=500, edge_color='black', linewidths=1, font_size=10)
 
 # Show plot
 plt.show()
