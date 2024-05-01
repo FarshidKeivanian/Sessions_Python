@@ -1,3 +1,4 @@
+#pip install nltk
 import nltk
 from nltk.chat.util import Chat, reflections
 
@@ -33,3 +34,7 @@ pairs = [
 chat = Chat(pairs, reflections)
 # Start conversation
 chat.converse()
+
+if __name__ == "__main__":
+    print("Hi, I'm the chatbot. Type 'quit' to exit.")
+    chat.converse()
