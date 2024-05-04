@@ -2,7 +2,7 @@ import psycopg2
 
 # Replace the following variables with your actual database credentials
 host = "localhost"  # or another hostname if your database server is remote
-database = "postgres"  # your database name, e.g., 'postgres' if it's the default PostgreSQL database
+database = "PythonClass"  # your database name, e.g., 'postgres' if it's the default PostgreSQL database
 user = "postgres"  # your username
 password = "your password"  # the password you use to access the database
 
