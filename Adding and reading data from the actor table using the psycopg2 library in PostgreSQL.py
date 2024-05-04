@@ -23,7 +23,7 @@ try:
     INSERT INTO actor (actorno, gender, fullname, firstnames, surname, bornin, birthdate) 
     VALUES (%s, %s, %s, %s, %s, %s, %s);
     """
-    new_actor_data = (2, 'M', 'Farshid Keivanian', 'Farshid', 'Keivanian', 'Esfahan', '1990-01-15')
+    new_actor_data = (2, 'M', 'Farshid Keivanian', 'Farshid', 'Keivanian', 'Esfahan', '2024-04-05')
     cursor.execute(insert_query, new_actor_data)
     conn.commit()
     print("New data inserted into the actor table successfully.")
