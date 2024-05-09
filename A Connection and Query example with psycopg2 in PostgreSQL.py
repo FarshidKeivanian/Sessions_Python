@@ -4,7 +4,7 @@ import psycopg2
 host = "localhost"  # or another hostname if your database server is remote
 database = "TwitterProject"  # your database name, e.g., 'postgres' if it's the default PostgreSQL database
 user = "postgres"  # your username
-password = "FK225280146"  # the password you use to access the database
+password = "your password"  # the password you use to access the database
 
 # Connection string
 conn_string = f"host={host} dbname={database} user={user} password={password}"
