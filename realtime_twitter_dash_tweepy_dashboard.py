@@ -1,3 +1,7 @@
+# pip install dash-bootstrap-components
+# Ensure libraries are installed (not a real code, just a reminder for setup)
+# pip install dash dash-bootstrap-components tweepy psycopg2-binary pandas plotly
+
 import dash
 import psycopg2
 import tweepy
@@ -11,8 +15,8 @@ import dash_bootstrap_components as dbc
 conn = psycopg2.connect(
     host='localhost',
     database='TwitterProject',
-    user='postgres',
-    password='FK225280146'
+    user='Your User',
+    password='Your Pass'
 )
 
 cursor = conn.cursor()
@@ -26,27 +30,32 @@ cursor.execute("""
     );
 """)
 
-# Authenticate to Twitter
+# Authenticate to Twitter using OAuth handler
+#auth = tweepy.OAuthHandler("YOUR_API_KEY", "YOUR_API_SECRET")
+#auth.set_access_token("YOUR_ACCESS_TOKEN", "YOUR_ACCESS_SECRET")
 auth = tweepy.OAuthHandler("YOUR_API_KEY", "YOUR_API_SECRET")
 auth.set_access_token("YOUR_ACCESS_TOKEN", "YOUR_ACCESS_SECRET")
-api = tweepy.API(auth, wait_on_rate_limit=True)
 
-# Define a stream listener
-class MyStreamListener(tweepy.StreamListener):
-    def on_status(self, status):
-        tweet = status.text
+# Define a stream listener using the new `tweepy.StreamingClient`
+class MyStream(tweepy.StreamingClient):
+    def on_tweet(self, tweet):
+        tweet_text = tweet.text
         try:
-            cursor.execute("INSERT INTO tweets (tweet) VALUES (%s)", (tweet,))
+            cursor.execute("INSERT INTO tweets (tweet) VALUES (%s)", (tweet_text,))
             conn.commit()
         except Exception as e:
             print(e)
 
-# Set up a stream
-my_listener = MyStreamListener()
-my_stream = tweepy.Stream(auth=api.auth, listener=my_listener)
+# Set up a stream using the updated API with the correct bearer token
+my_stream = MyStream("YOUR_CORRECT_BEARER_TOKEN")  # Replace YOUR_CORRECT_BEARER_TOKEN with actual bearer token
 
 # Start streaming tweets about a specific topic
-my_stream.filter(track=['python'], is_async=True)
+try:
+    my_stream.add_rules(tweepy.StreamRule("python"), dry_run=False)  # Add rule for filtering tweets
+    my_stream.filter()  # This starts the stream with the added rules
+except Exception as e:
+    print(f"An error occurred: {e}")
+
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
