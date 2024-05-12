@@ -1,7 +1,15 @@
+#pip install opencv-python
+#pip install tensorflow
+#pip install --upgrade tensorflow
+
+import os
 import cv2
 import numpy as np
 import tensorflow as tf
 from tkinter import Tk, filedialog
+
+# Suppress TensorFlow warnings
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # Set up the tkinter environment and hide the root window
 root = Tk()
@@ -39,4 +47,3 @@ model.compile(optimizer='adam', loss='mse')
 # Predict the 3D image
 predicted_3d = model.predict(gray_image.reshape(1, *gray_image.shape, 1))
 # Code for displaying the 3D image (depends on your specific application)
-
