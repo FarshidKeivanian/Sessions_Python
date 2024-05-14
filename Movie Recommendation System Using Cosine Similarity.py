@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 
 # Step 1: Load the synthetic dataset
 try:
-    ratings = pd.read_csv('D:\Synthetic_Rating_Film.csv')
+    ratings = pd.read_csv('D:\Synthetic_Rating_Movie.csv')
 except Exception as e:
     print(f"An error occurred while loading the synthetic dataset: {e}")
     exit()
