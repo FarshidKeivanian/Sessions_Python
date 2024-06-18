@@ -1,21 +1,22 @@
+# pip install numpy matplotlib tensorflow scikit-learn opencv-python
+
 import numpy as np
 import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout, BatchNormalization
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from sklearn.model_selection import train_test_split
 import os
 import cv2
 
 # Load and preprocess the dataset
-def load_images(data_dir):
+def load_images(data_dirs):
     images = []
     labels = []
-    for label in os.listdir(data_dir):
-        class_dir = os.path.join(data_dir, label)
-        for img_name in os.listdir(class_dir):
-            img_path = os.path.join(class_dir, img_name)
+    for label, data_dir in data_dirs.items():
+        for img_name in os.listdir(data_dir):
+            img_path = os.path.join(data_dir, img_name)
             img = cv2.imread(img_path, cv2.IMREAD_GRAYSCALE)
             img = cv2.resize(img, (128, 128))
             images.append(img)
@@ -31,44 +32,71 @@ def encode_labels(labels):
     labels = le.fit_transform(labels)
     return labels, le
 
-data_dir = 'path_to_your_dataset'  # Change this to your dataset directory
-images, labels = load_images(data_dir)
-labels, label_encoder = encode_labels(labels)
+# Define paths for training and testing datasets
+train_data_dirs = {
+    'glioma': 'D:/brain_tumor/Training/glioma',
+    'meningioma': 'D:/brain_tumor/Training/meningioma',
+    'notumor': 'D:/brain_tumor/Training/notumor',
+    'pituitary': 'D:/brain_tumor/Training/pituitary'
+}
+
+test_data_dirs = {
+    'glioma': 'D:/brain_tumor/Testing/glioma',
+    'meningioma': 'D:/brain_tumor/Testing/meningioma',
+    'notumor': 'D:/brain_tumor/Testing/notumor',
+    'pituitary': 'D:/brain_tumor/Testing/pituitary'
+}
+
+# Load training and testing datasets
+train_images, train_labels = load_images(train_data_dirs)
+test_images, test_labels = load_images(test_data_dirs)
+
+# Encode labels
+train_labels, label_encoder = encode_labels(train_labels)
+test_labels = label_encoder.transform(test_labels)
 
 # Normalize images
-images = images / 255.0
-images = np.expand_dims(images, axis=-1)
-
-# Split the data
-X_train, X_test, y_train, y_test = train_test_split(images, labels, test_size=0.2, random_state=42)
+train_images = train_images / 255.0
+train_images = np.expand_dims(train_images, axis=-1)
+test_images = test_images / 255.0
+test_images = np.expand_dims(test_images, axis=-1)
 
 # Data augmentation
 train_datagen = ImageDataGenerator(rotation_range=20, zoom_range=0.15,
                                    width_shift_range=0.2, height_shift_range=0.2, shear_range=0.15,
                                    horizontal_flip=True, fill_mode="nearest")
-train_generator = train_datagen.flow(X_train, y_train, batch_size=32)
+train_generator = train_datagen.flow(train_images, train_labels, batch_size=32)
 
-# Build the CNN model
+# Build the CNN model with regularization
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 1)),
+    BatchNormalization(),
     MaxPooling2D((2, 2)),
+    Dropout(0.25),
+    
     Conv2D(64, (3, 3), activation='relu'),
+    BatchNormalization(),
     MaxPooling2D((2, 2)),
+    Dropout(0.25),
+    
     Conv2D(128, (3, 3), activation='relu'),
+    BatchNormalization(),
     MaxPooling2D((2, 2)),
+    Dropout(0.25),
+    
     Flatten(),
     Dense(128, activation='relu'),
     Dropout(0.5),
-    Dense(4, activation='softmax')  # Change to 4 classes with softmax activation
+    Dense(4, activation='softmax')  # 4 classes with softmax activation
 ])
 
 model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
 # Train the model
-history = model.fit(train_generator, epochs=10, validation_data=(X_test, y_test))
+history = model.fit(train_generator, epochs=10, validation_data=(test_images, test_labels))
 
 # Evaluate the model
-loss, accuracy = model.evaluate(X_test, y_test)
+loss, accuracy = model.evaluate(test_images, test_labels)
 print(f'Test accuracy: {accuracy}')
 
 # Plot training & validation accuracy/loss values
@@ -104,5 +132,5 @@ def predict_and_visualize(model, images, labels, index):
 
 # Predict and visualize a random image from the test set
 import random
-random_index = random.randint(0, len(X_test) - 1)
-predict_and_visualize(model, X_test, y_test, random_index)
+random_index = random.randint(0, len(test_images) - 1)
+predict_and_visualize(model, test_images, test_labels, random_index)
