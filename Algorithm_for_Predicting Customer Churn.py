@@ -1,18 +1,15 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
+# For Windows: pip install pandas numpy matplotlib seaborn scikit-learn
+# For macOS package Python 3.x: pip3 install pandas numpy matplotlib seaborn scikit-learn
 
 # Importing necessary libraries
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix
+import pandas as pd # For data manipulation and analysis
+import numpy as np # For numerical operations
+import matplotlib.pyplot as plt # For plotting graphs
+import seaborn as sns # For statistical data visualization
+from sklearn.model_selection import train_test_split # For splitting data into training and testing sets
+from sklearn.preprocessing import StandardScaler # For scaling features
+from sklearn.linear_model import LogisticRegression # For building a logistic regression model
+from sklearn.metrics import classification_report, confusion_matrix # For evaluating the model
 
 # Load dataset
 df = pd.read_csv('telecom_customer_churn.csv')
@@ -69,10 +66,3 @@ plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.title('Confusion Matrix')
 plt.show()
-
-
-# In[ ]:
-
-
-
-
