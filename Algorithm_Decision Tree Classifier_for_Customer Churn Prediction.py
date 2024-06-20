@@ -1,7 +1,11 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
+#For Windows: pip install pandas numpy matplotlib seaborn scikit-learn
+#For macOS package Python 3.x: pip3 install pandas numpy matplotlib seaborn scikit-learn
+
+# Importing necessary libraries
+import pandas as pd # For data manipulation and analysis
+import numpy as np # For numerical operations
+import matplotlib.pyplot as plt # For plotting graphs
+import seaborn as sns # For statistical data visualization
 
 # Load the dataset
 file_path = 'D:\\Modified_Telco_Customer_Churn_Dataset_for_ML_Prediction_Analysis.csv'  # Replace with your actual file path
