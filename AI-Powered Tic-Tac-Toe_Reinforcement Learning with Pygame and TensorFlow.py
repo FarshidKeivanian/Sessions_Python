@@ -25,6 +25,9 @@ board = [0] * 9  # Represents a 3x3 grid
 game_over = False
 player_turn = True  # True if player's turn, False for AI
 
+# Initialize font
+font = pygame.font.Font(None, 36)
+
 # Neural Network for the AI Player
 model = Sequential()
 model.add(Dense(64, input_dim=9, activation='relu'))  # Input layer for 9 board positions
@@ -56,7 +59,7 @@ def check_win():
     ]
     for a, b, c in win_positions:
         if board[a] == board[b] == board[c] != 0:
-            return board[a]
+            return 'Human' if board[a] == 1 else 'AI'
     if 0 not in board:
         return 'Draw'  # If no empty spaces and no winner
     return None
@@ -67,6 +70,13 @@ def best_move():
         return None
     move = random.choice(empty_cells)  # Random move for simplicity
     return move
+
+def display_message(message):
+    text = font.render(message, True, black)
+    text_rect = text.get_rect(center=(width / 2, height / 2))
+    screen.blit(text, text_rect)
+    pygame.display.flip()
+    pygame.time.wait(2000)
 
 # Main game loop
 while not game_over:
@@ -79,7 +89,8 @@ while not game_over:
             index = (x // 100) + (y // 100) * 3
             if board[index] == 0:
                 board[index] = 1  # Player's move
-                if check_win() is not None:
+                result = check_win()
+                if result is not None:
                     game_over = True
                 player_turn = False
 
@@ -87,14 +98,16 @@ while not game_over:
         ai_move = best_move()
         if ai_move is not None:
             board[ai_move] = -1  # AI's move
-            if check_win() is not None:
+            result = check_win()
+            if result is not None:
                 game_over = True
         player_turn = True
 
     pygame.display.flip()
 
 if game_over:
-    print("Game Over. Result:", check_win())
-    pygame.time.wait(2000)  # Delay to see the final board
+    result = check_win()
+    message = "Congratulations! You've won the game!" if result == 'Human' else "Your hard work is commendable, but you need to try more." if result == 'AI' else "Game Over. It's a draw."
+    display_message(message)
     pygame.quit()
     sys.exit()
