@@ -1,4 +1,4 @@
-#pip install pygame numpy tensorflow
+# pip install pygame numpy tensorflow
 
 import sys
 import random
@@ -47,6 +47,20 @@ def draw_board():
         elif value == -1:
             pygame.draw.circle(screen, black, (x, y), 34, 2)
 
+def check_win():
+    # Define win positions as horizontal, vertical, and diagonal indices
+    win_positions = [
+        (0, 1, 2), (3, 4, 5), (6, 7, 8),  # Horizontal
+        (0, 3, 6), (1, 4, 7), (2, 5, 8),  # Vertical
+        (0, 4, 8), (2, 4, 6)  # Diagonal
+    ]
+    for a, b, c in win_positions:
+        if board[a] == board[b] == board[c] != 0:
+            return board[a]
+    if 0 not in board:
+        return 'Draw'  # If no empty spaces and no winner
+    return None
+
 def best_move():
     empty_cells = [i for i in range(9) if board[i] == 0]
     if not empty_cells:
@@ -60,17 +74,27 @@ while not game_over:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
-        elif event.type == pygame.MOUSEBUTTONDOWN and player_turn:
+        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and player_turn:
             x, y = pygame.mouse.get_pos()
             index = (x // 100) + (y // 100) * 3
             if board[index] == 0:
                 board[index] = 1  # Player's move
+                if check_win() is not None:
+                    game_over = True
                 player_turn = False
 
     if not player_turn and not game_over:
         ai_move = best_move()
         if ai_move is not None:
             board[ai_move] = -1  # AI's move
+            if check_win() is not None:
+                game_over = True
         player_turn = True
 
     pygame.display.flip()
+
+if game_over:
+    print("Game Over. Result:", check_win())
+    pygame.time.wait(2000)  # Delay to see the final board
+    pygame.quit()
+    sys.exit()
