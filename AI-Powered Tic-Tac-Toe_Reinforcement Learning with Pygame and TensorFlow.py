@@ -63,14 +63,16 @@ def check_win():
         return 'Draw'
     return None
 
-def best_move():
-    empty_cells = [i for i in range(9) if board[i] == 0]
-    if not empty_cells:
-        return None
-    return random.choice(empty_cells)
+def ai_move():
+    """AI chooses the best move based on the neural network prediction."""
+    state = np.array(board).reshape(1, -1)
+    predictions = model.predict(state)[0]
+    # Apply a mask to remove illegal moves (positions already taken)
+    legal_moves = [i if x == 0 else -1e7 for i, x in enumerate(board)]
+    move = np.argmax(np.array(predictions) + np.array(legal_moves))
+    return move if board[move] == 0 else None
 
 def display_message(message):
-    # Create a new window to display the message
     message_screen = pygame.display.set_mode((300, 150))
     pygame.display.set_caption('Game Over')
     message_screen.fill(white)
@@ -78,8 +80,8 @@ def display_message(message):
     text_rect = text.get_rect(center=(150, 75))
     message_screen.blit(text, text_rect)
     pygame.display.flip()
-    pygame.time.wait(2000)  # Wait 2 seconds to display the message
-    pygame.display.quit()  # Close the message window
+    pygame.time.wait(2000)
+    pygame.display.quit()
 
 # Main game loop
 while not game_over:
@@ -98,9 +100,9 @@ while not game_over:
                 player_turn = False
 
     if not player_turn and not game_over:
-        ai_move = best_move()
-        if ai_move is not None:
-            board[ai_move] = -1
+        index = ai_move()
+        if index is not None:
+            board[index] = -1
             result = check_win()
             if result is not None:
                 game_over = True
