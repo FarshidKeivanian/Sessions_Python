@@ -11,7 +11,7 @@ from tensorflow.keras.optimizers import Adam
 # Initialize Pygame
 pygame.init()
 
-# Set up the display
+# Set up the display for the game
 width, height = 300, 300
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption('Tic-Tac-Toe')
@@ -25,8 +25,8 @@ board = [0] * 9  # Represents a 3x3 grid
 game_over = False
 player_turn = True  # True if player's turn, False for AI
 
-# Initialize font
-font = pygame.font.Font(None, 36)
+# Initialize font, adjusting size to fit better
+font = pygame.font.Font(None, 28)
 
 # Neural Network for the AI Player
 model = Sequential()
@@ -51,32 +51,35 @@ def draw_board():
             pygame.draw.circle(screen, black, (x, y), 34, 2)
 
 def check_win():
-    # Define win positions as horizontal, vertical, and diagonal indices
     win_positions = [
-        (0, 1, 2), (3, 4, 5), (6, 7, 8),  # Horizontal
-        (0, 3, 6), (1, 4, 7), (2, 5, 8),  # Vertical
-        (0, 4, 8), (2, 4, 6)  # Diagonal
+        (0, 1, 2), (3, 4, 5), (6, 7, 8),
+        (0, 3, 6), (1, 4, 7), (2, 5, 8),
+        (0, 4, 8), (2, 4, 6)
     ]
     for a, b, c in win_positions:
         if board[a] == board[b] == board[c] != 0:
             return 'Human' if board[a] == 1 else 'AI'
     if 0 not in board:
-        return 'Draw'  # If no empty spaces and no winner
+        return 'Draw'
     return None
 
 def best_move():
     empty_cells = [i for i in range(9) if board[i] == 0]
     if not empty_cells:
         return None
-    move = random.choice(empty_cells)  # Random move for simplicity
-    return move
+    return random.choice(empty_cells)
 
 def display_message(message):
+    # Create a new window to display the message
+    message_screen = pygame.display.set_mode((300, 150))
+    pygame.display.set_caption('Game Over')
+    message_screen.fill(white)
     text = font.render(message, True, black)
-    text_rect = text.get_rect(center=(width / 2, height / 2))
-    screen.blit(text, text_rect)
+    text_rect = text.get_rect(center=(150, 75))
+    message_screen.blit(text, text_rect)
     pygame.display.flip()
-    pygame.time.wait(2000)
+    pygame.time.wait(2000)  # Wait 2 seconds to display the message
+    pygame.display.quit()  # Close the message window
 
 # Main game loop
 while not game_over:
@@ -88,7 +91,7 @@ while not game_over:
             x, y = pygame.mouse.get_pos()
             index = (x // 100) + (y // 100) * 3
             if board[index] == 0:
-                board[index] = 1  # Player's move
+                board[index] = 1
                 result = check_win()
                 if result is not None:
                     game_over = True
@@ -97,7 +100,7 @@ while not game_over:
     if not player_turn and not game_over:
         ai_move = best_move()
         if ai_move is not None:
-            board[ai_move] = -1  # AI's move
+            board[ai_move] = -1
             result = check_win()
             if result is not None:
                 game_over = True
@@ -107,7 +110,9 @@ while not game_over:
 
 if game_over:
     result = check_win()
-    message = "Congratulations! You've won the game!" if result == 'Human' else "Your hard work is commendable, but you need to try more." if result == 'AI' else "Game Over. It's a draw."
+    message = "Congratulations! You've won the game!" if result == 'Human' \
+        else "Your hard work is commendable, but you need to try more." if result == 'AI' \
+        else "Game Over. It's a draw."
     display_message(message)
     pygame.quit()
     sys.exit()
