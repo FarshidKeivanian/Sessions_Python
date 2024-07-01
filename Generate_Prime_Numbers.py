@@ -1,34 +1,21 @@
-#!/usr/bin/env python
-# coding: utf-8
+def generate_primes(limit):
+    primes = []
+    for num in range(2, limit + 1):
+        is_prime = True
+        for divisor in range(2, int(num ** 0.5) + 1):
+            if num % divisor == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(num)
+    return primes
 
-# In[2]:
+# Example usage
+prime_numbers = generate_primes(100)
+print("Prime numbers up to 100:", prime_numbers)
 
+# Using primes to determine game level dimensions
+level_width = prime_numbers[0]  # First prime number for width
+level_height = prime_numbers[1]  # Second prime number for height
 
-def is_prime(n):
-    """Check if a number is prime."""
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-def generate_primes():
-    """Generate an infinite sequence of prime numbers."""
-    n = 2
-    while True:
-        if is_prime(n):
-            yield n
-        n += 1
-
-# Example of using the generator
-prime_generator = generate_primes()
-for i in range(10):  # Generate the first 10 primes for demonstration
-    print(next(prime_generator))
-
-
-# In[ ]:
-
-
-
-
+print(f"Game level dimensions: Width = {level_width}, Height = {level_height}")
