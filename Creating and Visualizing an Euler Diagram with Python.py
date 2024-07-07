@@ -1,7 +1,5 @@
 #pip install matplotlib-venn
 
-#pip install matplotlib-venn
-
 # First, ensure that you have the matplotlib-venn package installed.
 # You can install it using pip by running the following command in your terminal:
 # pip install matplotlib-venn
