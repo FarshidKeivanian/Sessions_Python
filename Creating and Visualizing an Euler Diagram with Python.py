@@ -1,5 +1,7 @@
 #pip install matplotlib-venn
 
+#pip install matplotlib-venn
+
 # First, ensure that you have the matplotlib-venn package installed.
 # You can install it using pip by running the following command in your terminal:
 # pip install matplotlib-venn
@@ -15,5 +17,5 @@ set_b = {"Blue", "Yellow", "Orange"}
 venn2([set_a, set_b], ('Set A', 'Set B'))
 
 # Display the plot
-plt.title("Euler Diagram Example")
+plt.title("Customer Color Preferences: Euler Diagram")
 plt.show()
