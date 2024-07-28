@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
 import requests
 from bs4 import BeautifulSoup
 import json
@@ -31,7 +25,7 @@ for article in soup.find_all('a', href=True):
 
     # Correcting relative links to absolute
     if link.startswith('/'):
-        link = 'https://www.bbc.com' + link
+        link = 'https://www.abc.net.au/news' + link
 
     # Filtering news based on keywords
     if any(keyword.lower() in headline.lower() for keyword in keywords):
@@ -52,9 +46,10 @@ with open(output_file, 'w', encoding='utf-8') as file:
 
 print(f'News items have been saved in the file {output_file}.')
 
+# Reading the JSON file and displaying its content
+with open(output_file, 'r', encoding='utf-8') as file:
+    saved_news_items = json.load(file)
 
-# In[ ]:
-
-
-
-
+print("\nContent of the JSON file:")
+for item in saved_news_items:
+    print(f"Headline: {item['headline']}\nSummary: {item['summary']}\nLink: {item['link']}\n")
