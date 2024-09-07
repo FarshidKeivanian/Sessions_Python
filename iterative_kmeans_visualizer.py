@@ -56,8 +56,8 @@ def kmeans_real_time(data, k, iterations=10):
         
         ax.set_title(f'Iteration {frame + 1}')
         
-        # Pause for 1 second to visualize the change
-        time.sleep(1)
+        # Pause for 0.5 second to visualize the change
+        time.sleep(0.5)
         
         return scatters + centroid_scatters
 
