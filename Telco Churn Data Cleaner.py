@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv(r'C:\IDS201\Telco_Customer_Churn_Dataset_for_ML_Prediction_Analysis.csv')
+df = pd.read_csv(r'C:\IDS201\Telco_Customer_Churn_Dataset_with_Missing_Values.csv')
 
 print(df.head())
 print(df.info())
