@@ -6,7 +6,7 @@ import os
 
 # Initial settings
 url = 'https://www.abc.net.au/news'
-keywords = ['analysis', 'Gaza']  # Example for filtering news
+keywords = ['Australians']  # Example for filtering news
 output_format = 'json'  # or 'csv'
 output_file = f'headlines_{datetime.datetime.now().strftime("%Y-%m-%d")}.{output_format}'
 
