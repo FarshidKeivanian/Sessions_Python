@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "id": 1,
+            "title": "Complete project proposal",
+            "description": "Write and submit the project proposal to the client.",
+            "status": "In Progress",
+            "due_date": "2024-11-20"
+        },
+        {
+            "id": 2,
+            "title": "Team meeting",
+            "description": "Discuss project milestones and deliverables with the team.",
+            "status": "Completed",
+            "due_date": "2024-11-15"
+        },
+        {
+            "id": 3,
+            "title": "Code review",
+            "description": "Review the new feature implementation code.",
+            "status": "Pending",
+            "due_date": "2024-11-25"
+        }
+    ]
+}
