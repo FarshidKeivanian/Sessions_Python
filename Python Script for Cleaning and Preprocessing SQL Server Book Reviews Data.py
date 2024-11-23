@@ -11,7 +11,7 @@ connection = pyodbc.connect(
     f'DRIVER={driver};SERVER={server};DATABASE={database};Trusted_Connection=yes;'
 )
 
-# Define the SQL query
+# Define the SQL query to select rows with NULL Rating or empty Review_Text
 query = """
 SELECT * FROM Book_Reviews
 WHERE Rating IS NULL OR Review_Text = '';
@@ -24,10 +24,36 @@ data = pd.read_sql(query, connection)
 data['Rating'].fillna(data['Rating'].mean(), inplace=True)
 
 # Drop rows with missing Review_Text
-data.dropna(subset=['Review_Text'], inplace=True)
+cleaned_data = data.dropna(subset=['Review_Text'])
+
+# Define a cursor for database updates
+cursor = connection.cursor()
+
+# Update the Rating values in the database
+for index, row in cleaned_data.iterrows():
+    cursor.execute(
+        """
+        UPDATE Book_Reviews
+        SET Rating = ?
+        WHERE Review_ID = ?
+        """,
+        row['Rating'], row['Review_ID']
+    )
+
+# Delete rows with missing Review_Text in the database
+cursor.execute(
+    """
+    DELETE FROM Book_Reviews
+    WHERE Review_Text = '';
+    """
+)
+
+# Commit the changes to the database
+connection.commit()
 
 # Display the cleaned data
-print(data)
+print(cleaned_data)
 
 # Close the connection
+cursor.close()
 connection.close()
