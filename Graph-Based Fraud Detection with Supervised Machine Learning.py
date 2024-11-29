@@ -16,19 +16,26 @@ for _, row in data.iterrows():
     if row["Is_Fraud"] == 1:  # Only include fraudulent transactions
         G.add_edge(row["Account_ID"], row["Transaction_ID"], weight=row["Amount"])
 
-# Visualize the graph
+# Separate fraudulent and non-fraudulent transactions
+fraudulent_nodes = set(data[data["Is_Fraud"] == 1]["Account_ID"]).union(
+    set(data[data["Is_Fraud"] == 1]["Transaction_ID"])
+)
+
+# Visualize the graph with fraudulent nodes in red
 plt.figure(figsize=(10, 7))
 pos = nx.spring_layout(G, seed=42)  # Layout for positioning the nodes
+node_colors = ["red" if node in fraudulent_nodes else "lightblue" for node in G.nodes()]
+
 nx.draw(
     G,
     pos,
     with_labels=True,
-    node_color="lightblue",
+    node_color=node_colors,
     node_size=700,
     font_size=10,
     font_color="darkblue",
 )
-plt.title("Graph of Fraudulent Transactions and Accounts")
+plt.title("Graph of Fraudulent Transactions and Accounts (Fraud in Red)")
 plt.show()
 
 # Step 2: Supervised Learning for Fraud Detection
