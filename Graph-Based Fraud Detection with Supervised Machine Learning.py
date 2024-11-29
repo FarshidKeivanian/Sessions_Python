@@ -5,8 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import classification_report
 
-# Load the dataset
-data = pd.read_csv("Synthetic_bank_transactions.csv")  # Replace with your dataset path
+# Load the dataset from GitHub
+url = "https://raw.githubusercontent.com/FarshidKeivanian/Sessions_Python/main/Synthetic_bank_transactions.csv"
+data = pd.read_csv(url)  # Read the dataset directly from the raw GitHub link
 
 # Step 1: Graph Representation
 # Build the graph: Nodes are Account_IDs and Transaction_IDs, edges are between them if fraudulent
