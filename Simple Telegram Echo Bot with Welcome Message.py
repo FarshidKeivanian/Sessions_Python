@@ -9,7 +9,7 @@ bot = telebot.TeleBot(API_TOKEN)
 # Command to handle the '/start' or '/hello' message
 @bot.message_handler(commands=['start', 'hello'])
 def send_welcome(message):
-    bot.reply_to(message, "Welcome to the bot, Farshidkeivanian!")
+    bot.reply_to(message, "Welcome to my bot, Farshidkeivanian!")
 
 # Command to handle text messages
 @bot.message_handler(func=lambda message: True)
