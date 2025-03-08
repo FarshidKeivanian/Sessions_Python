@@ -1,13 +1,12 @@
 import pika
 
-# Establish connection to RabbitMQ
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
-# Declare queue
+# Declare the queue
 channel.queue_declare(queue='trades')
 
-# Callback function to log executed trades
+# Log trades
 def callback(ch, method, properties, body):
     print(f"Trade Log: {body.decode()}")
 
