@@ -3,15 +3,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load sample dataset
-np.random.seed(42)
-size = np.random.randint(500, 4000, 100)  # House size (sq ft)
-age = np.random.randint(1, 50, 100)  # Age of the house
-location = np.random.choice(['Urban', 'Suburban', 'Rural'], 100)  # Location categories
-price = 1000 + (size * 150) - (age * 200) + np.random.randint(-5000, 5000, 100)  # Price formula
+# Load dataset from GitHub
+url = "https://raw.githubusercontent.com/FarshidKeivanian/Sessions_Python/main/house_price_dataset_ISY503.csv"
+df = pd.read_csv(url)
 
-# Create DataFrame
-df = pd.DataFrame({'Size': size, 'Age': age, 'Location': location, 'Price': price})
+# Display first few rows to check the dataset structure
+print(df.head())
+
+# Check for missing values
+print("\nMissing Values:\n", df.isnull().sum())
 
 # Correlation heatmap
 plt.figure(figsize=(6, 4))
