@@ -1,20 +1,30 @@
+# Step 1: Install and import libraries
 import pandas as pd
+from google.colab import files
 
-# Load data from an Excel file
-df = pd.read_excel(r'C:\IDS201\Customer_Satisfaction_Survey.xlsx', sheet_name='Sheet1')
+# Step 2: Upload Excel file
+print("Please upload your Excel file:")
+uploaded = files.upload()
 
-# Display the first 5 rows of the DataFrame
+# Step 3: Get the uploaded filename
+filename = list(uploaded.keys())[0]
+
+# Step 4: Load data from the uploaded Excel file
+df = pd.read_excel(filename, sheet_name='Sheet1')
+
+# Step 5: Display the first 5 rows of the DataFrame
 print("First 5 rows of the dataset:")
 print(df.head())
 
-# Calculate basic statistics
+# Step 6: Calculate basic statistics
 print("\nDescriptive statistics:")
 print(df.describe())
 
-# Count the number of occurrences for a specific column
-if 'Column_Name' in df.columns:
-    value_counts = df['Column_Name'].value_counts()
-    print("\nValue counts for the selected column:")
+# Step 7: Count the number of occurrences for a specific column
+column_to_check = "Column_Name"  # <- Replace with actual column name
+if column_to_check in df.columns:
+    value_counts = df[column_to_check].value_counts()
+    print(f"\nValue counts for '{column_to_check}':")
     print(value_counts)
 else:
-    print("\nColumn_Name not found in the dataset.")
+    print(f"\n'{column_to_check}' not found in the dataset.")
