@@ -1,17 +1,22 @@
-# For Windows: pip install pandas numpy matplotlib seaborn scikit-learn
-# For macOS: pip3 install pandas numpy matplotlib seaborn scikit-learn
+# Install required libraries (Colab usually has these pre-installed, but just in case)
+!pip install pandas numpy matplotlib seaborn scikit-learn
 
-# Importing necessary libraries
+# Import necessary libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+from google.colab import files
+
+# Step 1: Upload the dataset
+print(" Please upload Modified_Telco_Customer_Churn_Dataset_for_ML_Prediction_Analysis.csv")
+uploaded = files.upload()
 
 # Load the dataset
-file_path = 'D:\\Modified_Telco_Customer_Churn_Dataset_for_ML_Prediction_Analysis.csv'  # Replace with your actual path
-data = pd.read_csv(file_path)
+file_name = list(uploaded.keys())[0]
+data = pd.read_csv(file_name)
 
-# Preprocess 'TotalCharges' and 'tenure'
+# Step 2: Preprocess 'TotalCharges' and 'tenure'
 data['TotalCharges'] = pd.to_numeric(data['TotalCharges'], errors='coerce')
 data.dropna(subset=['TotalCharges', 'tenure'], inplace=True)
 
@@ -96,7 +101,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 X = data.drop('Churn', axis=1)
 y = data['Churn']
 
-# Split the data
+# Train/Test split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Preprocessing pipeline
@@ -113,7 +118,7 @@ preprocessor = ColumnTransformer(
     ]
 )
 
-# Create pipeline with Random Forest
+# Pipeline with Random Forest
 model = Pipeline(steps=[
     ('preprocessor', preprocessor),
     ('classifier', RandomForestClassifier(random_state=42))
