@@ -3,53 +3,77 @@ from bs4 import BeautifulSoup
 import json
 import datetime
 import os
+from urllib.parse import urljoin
 
 # Initial settings
 url = 'https://www.abc.net.au/news'
-keywords = ['Australians']  # Example for filtering news
-output_format = 'json'  # or 'csv'
-output_file = f'headlines_{datetime.datetime.now().strftime("%Y-%m-%d")}.{output_format}'
+keywords = ['Australians']
+output_file = f'headlines_{datetime.datetime.now().strftime("%Y-%m-%d")}.json'
 
-# Fetching and parsing the website
-response = requests.get(url)
+headers = {
+    'User-Agent': 'Mozilla/5.0'
+}
+
+# Fetch page safely
+try:
+    response = requests.get(url, headers=headers, timeout=10)
+    response.raise_for_status()
+except requests.RequestException as e:
+    print(f"Error fetching website: {e}")
+    raise SystemExit
+
+# Parse HTML
 soup = BeautifulSoup(response.text, 'html.parser')
 
-# Collecting news information
 news_items = []
-# Attempting to find a more reliable way to identify news items, 
-# This might require adjustments
+seen_links = set()
+
+# Collect links
 for article in soup.find_all('a', href=True):
-    headline = article.text.strip() if article.text else 'No Title'
+    headline = article.get_text(strip=True)
     link = article['href']
-    summary = ''  # BBC News might not provide summaries in a consistent manner accessible from the homepage
 
-    # Correcting relative links to absolute
-    if link.startswith('/'):
-        link = 'https://www.abc.net.au/news' + link
+    if not headline:
+        continue
 
-    # Filtering news based on keywords
+    # Build absolute URL safely
+    link = urljoin(url, link)
+
+    # Skip duplicates
+    if link in seen_links:
+        continue
+
+    # Filter by keyword in headline
     if any(keyword.lower() in headline.lower() for keyword in keywords):
-        news_item = {
+        news_items.append({
             'headline': headline,
-            'summary': summary,  # Note: Summary might be empty
-            'link': link,
-        }
-        news_items.append(news_item)
+            'summary': '',
+            'link': link
+        })
+        seen_links.add(link)
 
-# Saving the collected information
+# Load old data if file exists
+existing_data = []
 if os.path.exists(output_file) and os.path.getsize(output_file) > 0:
     with open(output_file, 'r', encoding='utf-8') as file:
         try:
             existing_data = json.load(file)
-            news_items.extend(existing_data)
         except json.JSONDecodeError:
-            print("Error decoding JSON from the file. Starting with an empty list.")
+            print("Warning: JSON file was invalid. Starting fresh.")
+
+# Merge without duplicates
+existing_links = {item['link'] for item in existing_data if 'link' in item}
+for item in news_items:
+    if item['link'] not in existing_links:
+        existing_data.append(item)
+
+# Save JSON
 with open(output_file, 'w', encoding='utf-8') as file:
-    json.dump(news_items, file, ensure_ascii=False, indent=4)
+    json.dump(existing_data, file, ensure_ascii=False, indent=4)
 
-print(f'News items have been saved in the file {output_file}.')
+print(f"News items have been saved in the file {output_file}.")
 
-# Reading the JSON file and displaying its content
+# Display saved content
 with open(output_file, 'r', encoding='utf-8') as file:
     saved_news_items = json.load(file)
 
