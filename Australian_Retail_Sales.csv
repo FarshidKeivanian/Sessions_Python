@@ -1,0 +1,401 @@
+OrderID,Date,State,Store,Category,Product,UnitsSold,UnitPrice,Revenue,Cost,Profit,CustomerType,PaymentMethod
+ORD0001,2025-08-05,New South Wales,Sydney CBD,Sports,Tennis Racket,8,176.05,1408.4,684.3,724.1,Member,Online
+ORD0002,2025-11-29,New South Wales,Sydney CBD,Electronics,Tablet,8,611.37,4890.96,2246.36,2644.6,Member,Online
+ORD0003,2025-08-05,Western Australia,Fremantle,Home Appliances,Coffee Machine,19,341.05,6479.95,4887.54,1592.41,Member,Online
+ORD0004,2025-11-06,Queensland,Gold Coast,Home Appliances,Vacuum Cleaner,11,131.63,1447.93,844.11,603.82,Casual,Cash
+ORD0005,2025-04-09,Queensland,Brisbane City,Fashion,Sneakers,13,103.77,1349.01,745.48,603.53,Casual,Online
+ORD0006,2025-08-21,New South Wales,Sydney CBD,Home Appliances,Air Fryer,3,1027.83,3083.49,2322.7,760.79,Casual,Cash
+ORD0007,2025-11-22,Queensland,Brisbane City,Sports,Yoga Mat,7,807.51,5652.57,3932.14,1720.43,Member,Online
+ORD0008,2025-06-16,Victoria,Ballarat,Home Appliances,Vacuum Cleaner,15,461.55,6923.25,5513.21,1410.04,Member,Online
+ORD0009,2025-12-02,New South Wales,Sydney CBD,Electronics,Smartphone,13,328.61,4271.93,2237.82,2034.11,Casual,Card
+ORD0010,2025-10-27,South Australia,Mount Gambier,Fashion,Jacket,9,176.16,1585.44,1126.85,458.59,Casual,Online
+ORD0011,2025-03-20,South Australia,Mount Gambier,Sports,Tennis Racket,5,616.34,3081.7,1484.82,1596.88,Member,Card
+ORD0012,2025-01-06,Victoria,Ballarat,Fashion,Sneakers,13,464.13,6033.69,4818.76,1214.93,Casual,Online
+ORD0013,2025-05-15,New South Wales,Newcastle,Groceries,Coffee Beans,11,142.75,1570.25,945.55,624.7,Casual,Card
+ORD0014,2025-07-11,Western Australia,Perth CBD,Groceries,Organic Snacks,10,1011.59,10115.9,6349.57,3766.33,Member,Card
+ORD0015,2025-05-03,Victoria,Ballarat,Groceries,Organic Snacks,20,395.75,7915.0,3615.71,4299.29,Casual,Cash
+ORD0016,2025-12-04,New South Wales,Sydney CBD,Groceries,Organic Snacks,3,880.97,2642.91,1944.15,698.76,Member,Card
+ORD0017,2025-06-09,South Australia,Adelaide Central,Sports,Fitness Tracker,7,1115.41,7807.87,5577.5,2230.37,Member,Online
+ORD0018,2025-10-11,South Australia,Mount Gambier,Fashion,Jeans,4,305.01,1220.04,576.36,643.68,Member,Online
+ORD0019,2025-06-19,Victoria,Ballarat,Home Appliances,Microwave,3,852.33,2556.99,1203.33,1353.66,Member,Card
+ORD0020,2025-08-31,New South Wales,Newcastle,Home Appliances,Air Fryer,16,264.94,4239.04,2103.87,2135.17,Casual,Card
+ORD0021,2025-12-01,South Australia,Adelaide Central,Electronics,Laptop,14,431.61,6042.54,3588.58,2453.96,Member,Online
+ORD0022,2025-08-05,New South Wales,Sydney CBD,Fashion,Backpack,4,305.9,1223.6,632.08,591.52,Casual,Card
+ORD0023,2025-11-30,Victoria,Geelong,Fashion,Jacket,3,537.33,1611.99,1211.37,400.62,Member,Card
+ORD0024,2025-03-26,Western Australia,Perth CBD,Electronics,Tablet,6,493.63,2961.78,1831.79,1129.99,Casual,Card
+ORD0025,2025-04-08,South Australia,Adelaide Central,Fashion,Backpack,15,349.45,5241.75,3636.76,1604.99,Casual,Card
+ORD0026,2025-09-18,Queensland,Brisbane City,Electronics,Laptop,11,78.03,858.33,561.74,296.59,Member,Card
+ORD0027,2025-11-01,New South Wales,Sydney CBD,Electronics,Laptop,8,490.49,3923.92,3058.93,864.99,Member,Online
+ORD0028,2025-12-09,New South Wales,Newcastle,Electronics,Headphones,19,682.62,12969.78,7272.54,5697.24,Casual,Card
+ORD0029,2025-01-05,Queensland,Brisbane City,Sports,Fitness Tracker,5,809.31,4046.55,2245.83,1800.72,Casual,Card
+ORD0030,2025-07-09,South Australia,Adelaide Central,Electronics,Tablet,17,325.59,5535.03,4298.73,1236.3,Member,Card
+ORD0031,2025-10-11,Queensland,Brisbane City,Fashion,Backpack,20,1180.79,23615.8,17298.22,6317.58,Member,Online
+ORD0032,2025-05-25,Queensland,Cairns,Electronics,Tablet,9,147.36,1326.24,646.49,679.75,Member,Cash
+ORD0033,2025-11-21,Western Australia,Perth CBD,Sports,Tennis Racket,9,611.44,5502.96,2960.0,2542.96,Member,Card
+ORD0034,2025-08-15,South Australia,Mount Gambier,Electronics,Laptop,11,927.63,10203.93,6867.14,3336.79,Casual,Card
+ORD0035,2025-01-19,Western Australia,Fremantle,Groceries,Organic Snacks,4,99.54,398.16,302.24,95.92,Member,Online
+ORD0036,2025-04-18,Queensland,Cairns,Groceries,Protein Bars,14,161.66,2263.24,1262.64,1000.6,Member,Cash
+ORD0037,2025-03-25,Victoria,Ballarat,Electronics,Smartphone,18,1062.12,19118.16,11322.39,7795.77,Member,Card
+ORD0038,2025-03-23,Victoria,Geelong,Electronics,Tablet,11,941.04,10351.44,6149.79,4201.65,Member,Cash
+ORD0039,2025-04-27,New South Wales,Parramatta,Electronics,Headphones,8,247.49,1979.92,1527.43,452.49,Casual,Cash
+ORD0040,2025-11-25,Victoria,Melbourne Central,Home Appliances,Coffee Machine,11,341.54,3756.94,1781.91,1975.03,Casual,Cash
+ORD0041,2025-05-16,Western Australia,Fremantle,Groceries,Coffee Beans,1,147.26,147.26,116.28,30.98,Member,Online
+ORD0042,2025-10-23,New South Wales,Sydney CBD,Groceries,Milk,12,876.97,10523.64,5891.0,4632.64,Member,Cash
+ORD0043,2025-08-09,Victoria,Geelong,Electronics,Headphones,1,628.71,628.71,460.39,168.32,Member,Cash
+ORD0044,2025-07-29,New South Wales,Newcastle,Sports,Yoga Mat,4,866.51,3466.04,1924.04,1542.0,Casual,Online
+ORD0045,2025-10-19,Queensland,Gold Coast,Sports,Tennis Racket,7,510.33,3572.31,2783.28,789.03,Member,Online
+ORD0046,2025-08-15,Queensland,Gold Coast,Groceries,Organic Snacks,10,351.43,3514.3,2110.2,1404.1,Casual,Cash
+ORD0047,2025-05-01,South Australia,Adelaide Central,Groceries,Milk,6,794.03,4764.18,2617.08,2147.1,Casual,Card
+ORD0048,2025-08-01,Queensland,Brisbane City,Home Appliances,Vacuum Cleaner,1,64.99,64.99,51.63,13.36,Member,Cash
+ORD0049,2025-08-06,Western Australia,Perth CBD,Fashion,Jeans,13,300.34,3904.42,2653.52,1250.9,Member,Card
+ORD0050,2025-03-10,Victoria,Melbourne Central,Groceries,Milk,2,673.31,1346.62,1038.4,308.22,Member,Cash
+ORD0051,2025-05-13,South Australia,Mount Gambier,Fashion,Jeans,18,540.64,9731.52,4921.28,4810.24,Casual,Cash
+ORD0052,2025-05-20,Victoria,Ballarat,Sports,Fitness Tracker,8,336.77,2694.16,1285.44,1408.72,Casual,Card
+ORD0053,2025-04-20,Queensland,Gold Coast,Groceries,Organic Snacks,5,189.49,947.45,553.37,394.08,Member,Online
+ORD0054,2025-10-27,New South Wales,Parramatta,Fashion,Backpack,18,564.45,10160.1,4793.46,5366.64,Casual,Cash
+ORD0055,2025-10-03,New South Wales,Newcastle,Fashion,Jeans,1,1131.86,1131.86,627.63,504.23,Casual,Cash
+ORD0056,2025-12-14,Western Australia,Perth CBD,Fashion,Jacket,9,528.64,4757.76,2189.32,2568.44,Casual,Online
+ORD0057,2025-11-26,South Australia,Adelaide Central,Fashion,Jacket,20,645.61,12912.2,9909.15,3003.05,Member,Card
+ORD0058,2025-06-22,South Australia,Adelaide Central,Fashion,Jacket,2,319.59,639.18,360.86,278.32,Casual,Cash
+ORD0059,2025-04-25,South Australia,Mount Gambier,Fashion,Backpack,3,569.67,1709.01,1217.09,491.92,Member,Cash
+ORD0060,2025-03-06,New South Wales,Newcastle,Electronics,Laptop,8,247.24,1977.92,904.17,1073.75,Member,Card
+ORD0061,2025-11-07,South Australia,Adelaide Central,Groceries,Protein Bars,15,842.36,12635.4,9077.45,3557.95,Member,Online
+ORD0062,2025-04-12,New South Wales,Sydney CBD,Sports,Football,19,40.56,770.64,430.93,339.71,Casual,Cash
+ORD0063,2025-01-22,New South Wales,Newcastle,Home Appliances,Microwave,10,1021.85,10218.5,6745.68,3472.82,Member,Online
+ORD0064,2025-02-24,Queensland,Cairns,Fashion,Backpack,3,612.09,1836.27,1045.63,790.64,Casual,Cash
+ORD0065,2025-10-03,South Australia,Mount Gambier,Fashion,Jacket,14,219.6,3074.4,1944.9,1129.5,Casual,Online
+ORD0066,2025-08-19,South Australia,Mount Gambier,Fashion,Backpack,11,1023.54,11258.94,8340.13,2918.81,Member,Cash
+ORD0067,2025-04-19,Victoria,Geelong,Groceries,Milk,11,44.15,485.65,363.19,122.46,Member,Cash
+ORD0068,2025-04-08,Queensland,Gold Coast,Sports,Yoga Mat,20,844.41,16888.2,9232.68,7655.52,Member,Online
+ORD0069,2025-01-09,New South Wales,Sydney CBD,Fashion,Jeans,18,912.22,16419.96,11357.9,5062.06,Casual,Cash
+ORD0070,2025-09-29,New South Wales,Parramatta,Home Appliances,Coffee Machine,8,374.39,2995.12,1957.44,1037.68,Casual,Online
+ORD0071,2025-03-03,Queensland,Gold Coast,Groceries,Coffee Beans,12,846.4,10156.8,5533.64,4623.16,Casual,Card
+ORD0072,2025-04-10,Victoria,Geelong,Electronics,Tablet,7,267.5,1872.5,1159.96,712.54,Casual,Card
+ORD0073,2025-01-28,Queensland,Brisbane City,Sports,Tennis Racket,10,26.84,268.4,170.96,97.44,Casual,Card
+ORD0074,2025-08-14,Western Australia,Fremantle,Home Appliances,Coffee Machine,4,1048.54,4194.16,2730.07,1464.09,Casual,Cash
+ORD0075,2025-10-23,Queensland,Brisbane City,Electronics,Smartphone,16,145.76,2332.16,1102.81,1229.35,Casual,Card
+ORD0076,2025-11-02,New South Wales,Sydney CBD,Home Appliances,Air Fryer,3,1192.76,3578.28,1758.57,1819.71,Casual,Online
+ORD0077,2025-10-19,Western Australia,Perth CBD,Groceries,Milk,15,1091.12,16366.8,9068.41,7298.39,Casual,Cash
+ORD0078,2025-05-03,Western Australia,Perth CBD,Groceries,Organic Snacks,7,754.36,5280.52,2865.35,2415.17,Member,Card
+ORD0079,2025-01-17,Victoria,Ballarat,Electronics,Tablet,1,496.14,496.14,342.97,153.17,Casual,Cash
+ORD0080,2025-02-28,Victoria,Geelong,Sports,Fitness Tracker,3,827.99,2483.97,1921.03,562.94,Member,Cash
+ORD0081,2025-10-19,Western Australia,Perth CBD,Home Appliances,Air Fryer,5,94.98,474.9,241.28,233.62,Casual,Online
+ORD0082,2025-02-11,Queensland,Gold Coast,Electronics,Headphones,10,842.68,8426.8,6572.37,1854.43,Casual,Cash
+ORD0083,2025-05-18,Western Australia,Perth CBD,Fashion,Backpack,20,307.94,6158.8,2968.32,3190.48,Member,Online
+ORD0084,2025-08-12,Western Australia,Perth CBD,Home Appliances,Coffee Machine,17,785.3,13350.1,10287.93,3062.17,Member,Online
+ORD0085,2025-07-30,South Australia,Adelaide Central,Fashion,Backpack,14,406.64,5692.96,3897.1,1795.86,Member,Cash
+ORD0086,2025-09-21,South Australia,Mount Gambier,Fashion,Sneakers,15,114.79,1721.85,926.94,794.91,Member,Cash
+ORD0087,2025-08-15,New South Wales,Newcastle,Groceries,Milk,14,74.5,1043.0,658.61,384.39,Casual,Online
+ORD0088,2025-11-19,New South Wales,Sydney CBD,Sports,Tennis Racket,10,531.36,5313.6,3689.7,1623.9,Member,Card
+ORD0089,2025-08-25,Western Australia,Perth CBD,Home Appliances,Air Fryer,18,26.27,472.86,280.31,192.55,Member,Card
+ORD0090,2025-05-05,New South Wales,Newcastle,Home Appliances,Coffee Machine,10,615.56,6155.6,3359.1,2796.5,Casual,Cash
+ORD0091,2025-08-01,South Australia,Adelaide Central,Fashion,Jacket,20,614.81,12296.2,9317.62,2978.58,Member,Cash
+ORD0092,2025-08-17,Queensland,Cairns,Sports,Football,10,874.0,8740.0,6494.84,2245.16,Casual,Card
+ORD0093,2025-12-24,Western Australia,Fremantle,Sports,Yoga Mat,18,917.82,16520.76,9615.47,6905.29,Casual,Card
+ORD0094,2025-12-06,Victoria,Ballarat,Fashion,Jacket,14,61.94,867.16,616.24,250.92,Casual,Cash
+ORD0095,2025-02-21,Victoria,Geelong,Electronics,Tablet,17,1158.77,19699.09,11153.59,8545.5,Member,Cash
+ORD0096,2025-05-16,Western Australia,Fremantle,Electronics,Tablet,14,1046.41,14649.74,11565.75,3083.99,Member,Cash
+ORD0097,2025-11-17,Queensland,Cairns,Fashion,Sneakers,11,1024.29,11267.19,8459.07,2808.12,Casual,Cash
+ORD0098,2025-02-16,South Australia,Adelaide Central,Groceries,Organic Snacks,8,761.08,6088.64,4702.41,1386.23,Member,Online
+ORD0099,2025-01-29,South Australia,Adelaide Central,Electronics,Headphones,6,835.86,5015.16,3842.61,1172.55,Member,Cash
+ORD0100,2025-03-31,Queensland,Gold Coast,Sports,Fitness Tracker,5,300.59,1502.95,893.08,609.87,Member,Card
+ORD0101,2025-05-11,New South Wales,Newcastle,Fashion,Jacket,16,1096.27,17540.32,8771.76,8768.56,Casual,Online
+ORD0102,2025-10-28,South Australia,Mount Gambier,Electronics,Headphones,10,816.36,8163.6,4125.0,4038.6,Casual,Cash
+ORD0103,2025-02-24,Queensland,Cairns,Fashion,Backpack,15,1015.91,15238.65,7919.92,7318.73,Casual,Cash
+ORD0104,2025-07-22,Victoria,Geelong,Groceries,Coffee Beans,19,362.09,6879.71,4779.66,2100.05,Member,Online
+ORD0105,2025-11-07,Queensland,Brisbane City,Groceries,Organic Snacks,20,896.75,17935.0,13298.69,4636.31,Casual,Card
+ORD0106,2025-08-14,Queensland,Brisbane City,Home Appliances,Air Fryer,5,757.62,3788.1,2902.41,885.69,Member,Cash
+ORD0107,2025-04-13,New South Wales,Newcastle,Sports,Tennis Racket,3,1092.46,3277.38,1849.59,1427.79,Casual,Card
+ORD0108,2025-06-23,Victoria,Ballarat,Sports,Yoga Mat,6,315.79,1894.74,1399.53,495.21,Casual,Cash
+ORD0109,2025-07-07,New South Wales,Parramatta,Electronics,Tablet,8,1033.57,8268.56,5816.73,2451.83,Casual,Online
+ORD0110,2025-07-15,New South Wales,Parramatta,Electronics,Smartphone,18,157.07,2827.26,1637.0,1190.26,Casual,Online
+ORD0111,2025-04-24,Queensland,Brisbane City,Home Appliances,Coffee Machine,1,747.26,747.26,582.94,164.32,Casual,Online
+ORD0112,2025-09-10,New South Wales,Newcastle,Fashion,Backpack,14,148.84,2083.76,970.76,1113.0,Member,Cash
+ORD0113,2025-03-21,New South Wales,Sydney CBD,Home Appliances,Vacuum Cleaner,13,549.84,7147.92,4893.97,2253.95,Casual,Online
+ORD0114,2025-05-01,South Australia,Adelaide Central,Fashion,Jeans,9,48.93,440.37,255.28,185.09,Casual,Cash
+ORD0115,2025-02-16,Queensland,Brisbane City,Sports,Yoga Mat,2,483.79,967.58,499.69,467.89,Member,Cash
+ORD0116,2025-04-16,Victoria,Ballarat,Groceries,Organic Snacks,2,946.29,1892.58,1013.0,879.58,Member,Online
+ORD0117,2025-03-16,New South Wales,Newcastle,Home Appliances,Vacuum Cleaner,8,400.99,3207.92,1609.23,1598.69,Member,Cash
+ORD0118,2025-05-02,Victoria,Ballarat,Sports,Tennis Racket,4,796.66,3186.64,1462.74,1723.9,Member,Cash
+ORD0119,2025-02-02,Western Australia,Fremantle,Electronics,Tablet,9,72.35,651.15,462.06,189.09,Member,Online
+ORD0120,2025-12-04,South Australia,Mount Gambier,Sports,Football,15,609.57,9143.55,7140.16,2003.39,Member,Online
+ORD0121,2025-02-25,Western Australia,Fremantle,Fashion,Sneakers,2,1198.32,2396.64,1789.22,607.42,Casual,Online
+ORD0122,2025-11-21,South Australia,Mount Gambier,Electronics,Laptop,11,733.87,8072.57,3818.24,4254.33,Casual,Online
+ORD0123,2025-11-30,Western Australia,Fremantle,Fashion,Backpack,15,611.61,9174.15,5509.72,3664.43,Member,Online
+ORD0124,2025-02-18,Western Australia,Perth CBD,Fashion,Jeans,8,502.44,4019.52,2972.82,1046.7,Casual,Cash
+ORD0125,2025-02-16,Queensland,Gold Coast,Sports,Yoga Mat,12,1144.78,13737.36,9484.1,4253.26,Casual,Card
+ORD0126,2025-03-04,New South Wales,Sydney CBD,Fashion,Sneakers,12,976.01,11712.12,7551.15,4160.97,Casual,Online
+ORD0127,2025-12-03,South Australia,Mount Gambier,Fashion,Sneakers,10,724.49,7244.9,4151.88,3093.02,Member,Card
+ORD0128,2025-10-15,South Australia,Adelaide Central,Electronics,Smartphone,18,447.4,8053.2,5773.44,2279.76,Member,Cash
+ORD0129,2025-06-29,Western Australia,Perth CBD,Groceries,Coffee Beans,1,224.7,224.7,156.38,68.32,Casual,Cash
+ORD0130,2025-09-29,New South Wales,Sydney CBD,Home Appliances,Coffee Machine,3,178.83,536.49,360.31,176.18,Member,Card
+ORD0131,2025-11-02,Victoria,Geelong,Fashion,Jeans,11,197.32,2170.52,1213.48,957.04,Casual,Online
+ORD0132,2025-08-06,New South Wales,Sydney CBD,Home Appliances,Vacuum Cleaner,20,69.22,1384.4,662.51,721.89,Casual,Online
+ORD0133,2025-05-26,South Australia,Mount Gambier,Fashion,Backpack,7,908.38,6358.66,3114.7,3243.96,Casual,Card
+ORD0134,2025-04-15,Western Australia,Fremantle,Groceries,Coffee Beans,2,272.42,544.84,432.91,111.93,Member,Card
+ORD0135,2025-03-08,Queensland,Brisbane City,Home Appliances,Air Fryer,10,400.47,4004.7,1812.95,2191.75,Casual,Card
+ORD0136,2025-08-24,South Australia,Adelaide Central,Groceries,Coffee Beans,3,482.51,1447.53,1027.33,420.2,Casual,Card
+ORD0137,2025-07-27,New South Wales,Parramatta,Groceries,Milk,19,491.26,9333.94,6291.54,3042.4,Casual,Card
+ORD0138,2025-10-29,New South Wales,Parramatta,Home Appliances,Coffee Machine,12,114.87,1378.44,1027.72,350.72,Member,Cash
+ORD0139,2025-11-21,South Australia,Adelaide Central,Fashion,Backpack,11,273.67,3010.37,2175.57,834.8,Member,Online
+ORD0140,2025-02-22,New South Wales,Newcastle,Groceries,Protein Bars,12,427.81,5133.72,4031.91,1101.81,Member,Card
+ORD0141,2025-11-18,Victoria,Geelong,Home Appliances,Vacuum Cleaner,20,191.92,3838.4,2747.16,1091.24,Member,Card
+ORD0142,2025-06-11,South Australia,Mount Gambier,Groceries,Milk,19,775.16,14728.04,11713.01,3015.03,Casual,Online
+ORD0143,2025-09-17,Victoria,Geelong,Electronics,Headphones,15,761.35,11420.25,8322.11,3098.14,Member,Cash
+ORD0144,2025-02-16,New South Wales,Parramatta,Fashion,Jeans,2,77.7,155.4,115.17,40.23,Member,Online
+ORD0145,2025-11-06,Western Australia,Fremantle,Fashion,Sneakers,15,1091.77,16376.55,10646.07,5730.48,Member,Cash
+ORD0146,2025-11-27,South Australia,Adelaide Central,Electronics,Headphones,4,975.05,3900.2,2898.17,1002.03,Member,Online
+ORD0147,2025-05-25,Victoria,Melbourne Central,Home Appliances,Coffee Machine,15,633.64,9504.6,6305.65,3198.95,Casual,Cash
+ORD0148,2025-05-10,South Australia,Mount Gambier,Sports,Football,11,88.44,972.84,469.96,502.88,Casual,Cash
+ORD0149,2025-12-24,Western Australia,Perth CBD,Sports,Football,19,799.7,15194.3,11712.7,3481.6,Casual,Online
+ORD0150,2025-12-10,South Australia,Adelaide Central,Groceries,Organic Snacks,10,675.12,6751.2,4558.56,2192.64,Casual,Card
+ORD0151,2025-09-06,Western Australia,Perth CBD,Fashion,Backpack,1,441.49,441.49,226.52,214.97,Member,Cash
+ORD0152,2025-06-22,Victoria,Melbourne Central,Home Appliances,Vacuum Cleaner,3,361.99,1085.97,788.24,297.73,Member,Online
+ORD0153,2025-08-13,Western Australia,Perth CBD,Groceries,Milk,5,203.07,1015.35,752.34,263.01,Member,Online
+ORD0154,2025-10-01,New South Wales,Parramatta,Sports,Tennis Racket,15,736.61,11049.15,7881.77,3167.38,Casual,Card
+ORD0155,2025-05-25,Victoria,Geelong,Fashion,Jacket,12,817.19,9806.28,6370.62,3435.66,Casual,Cash
+ORD0156,2025-10-11,South Australia,Mount Gambier,Home Appliances,Vacuum Cleaner,20,174.69,3493.8,1877.92,1615.88,Casual,Cash
+ORD0157,2025-03-17,New South Wales,Newcastle,Groceries,Organic Snacks,10,109.81,1098.1,555.76,542.34,Casual,Online
+ORD0158,2025-07-11,South Australia,Adelaide Central,Home Appliances,Coffee Machine,12,1117.26,13407.12,7980.1,5427.02,Casual,Online
+ORD0159,2025-03-12,Victoria,Geelong,Electronics,Smartphone,8,43.54,348.32,270.22,78.1,Casual,Card
+ORD0160,2025-05-12,New South Wales,Parramatta,Fashion,Jacket,16,543.84,8701.44,3931.64,4769.8,Member,Card
+ORD0161,2025-05-03,Victoria,Melbourne Central,Groceries,Milk,4,933.65,3734.6,1991.19,1743.41,Member,Card
+ORD0162,2025-03-15,South Australia,Mount Gambier,Electronics,Laptop,16,720.12,11521.92,5251.14,6270.78,Member,Online
+ORD0163,2025-07-04,Queensland,Gold Coast,Electronics,Smartphone,8,689.09,5512.72,2842.14,2670.58,Member,Online
+ORD0164,2025-05-10,New South Wales,Newcastle,Groceries,Organic Snacks,13,1049.26,13640.38,6346.01,7294.37,Casual,Cash
+ORD0165,2025-01-23,New South Wales,Parramatta,Electronics,Smartphone,8,882.2,7057.6,4727.82,2329.78,Casual,Card
+ORD0166,2025-02-02,Queensland,Cairns,Sports,Tennis Racket,15,1177.17,17657.55,10903.29,6754.26,Member,Card
+ORD0167,2025-09-21,South Australia,Adelaide Central,Sports,Tennis Racket,2,951.42,1902.84,1446.21,456.63,Casual,Cash
+ORD0168,2025-06-19,South Australia,Mount Gambier,Sports,Football,7,350.47,2453.29,1844.26,609.03,Member,Online
+ORD0169,2025-04-06,Queensland,Brisbane City,Sports,Fitness Tracker,13,894.54,11629.02,8874.37,2754.65,Casual,Cash
+ORD0170,2025-05-31,South Australia,Mount Gambier,Sports,Yoga Mat,3,875.23,2625.69,1254.09,1371.6,Member,Online
+ORD0171,2025-12-20,Queensland,Brisbane City,Electronics,Smartphone,10,374.73,3747.3,2476.66,1270.64,Casual,Card
+ORD0172,2025-12-10,South Australia,Mount Gambier,Fashion,Sneakers,12,741.67,8900.04,5359.86,3540.18,Member,Card
+ORD0173,2025-03-06,South Australia,Mount Gambier,Groceries,Protein Bars,1,179.91,179.91,119.22,60.69,Casual,Card
+ORD0174,2025-08-19,New South Wales,Sydney CBD,Sports,Yoga Mat,13,1139.87,14818.31,6836.2,7982.11,Member,Online
+ORD0175,2025-05-23,Queensland,Gold Coast,Fashion,Sneakers,19,173.86,3303.34,1910.76,1392.58,Casual,Online
+ORD0176,2025-05-14,Victoria,Melbourne Central,Electronics,Tablet,16,626.12,10017.92,7711.19,2306.73,Member,Cash
+ORD0177,2025-03-30,South Australia,Adelaide Central,Groceries,Coffee Beans,16,248.21,3971.36,1975.77,1995.59,Member,Cash
+ORD0178,2025-12-31,South Australia,Adelaide Central,Sports,Yoga Mat,3,664.5,1993.5,1099.67,893.83,Casual,Card
+ORD0179,2025-01-14,Victoria,Geelong,Groceries,Protein Bars,4,1182.31,4729.24,3439.21,1290.03,Member,Cash
+ORD0180,2025-06-08,Queensland,Cairns,Groceries,Coffee Beans,15,966.36,14495.4,9321.65,5173.75,Member,Card
+ORD0181,2025-02-07,South Australia,Mount Gambier,Groceries,Milk,14,989.77,13856.78,6593.23,7263.55,Casual,Online
+ORD0182,2025-08-10,South Australia,Mount Gambier,Groceries,Coffee Beans,5,1054.77,5273.85,3813.48,1460.37,Member,Card
+ORD0183,2025-09-23,Western Australia,Perth CBD,Electronics,Tablet,10,205.94,2059.4,1159.3,900.1,Member,Cash
+ORD0184,2025-11-25,Queensland,Brisbane City,Sports,Tennis Racket,18,336.6,6058.8,4051.87,2006.93,Member,Online
+ORD0185,2025-01-22,Victoria,Ballarat,Groceries,Protein Bars,6,793.89,4763.34,3344.92,1418.42,Casual,Online
+ORD0186,2025-11-18,New South Wales,Sydney CBD,Electronics,Smartphone,7,922.68,6458.76,3848.16,2610.6,Member,Cash
+ORD0187,2025-02-07,Western Australia,Fremantle,Sports,Fitness Tracker,8,967.58,7740.64,5339.08,2401.56,Casual,Cash
+ORD0188,2025-06-13,New South Wales,Sydney CBD,Fashion,Jeans,16,562.69,9003.04,5123.34,3879.7,Member,Cash
+ORD0189,2025-05-17,Queensland,Gold Coast,Home Appliances,Air Fryer,17,678.36,11532.12,6477.48,5054.64,Casual,Card
+ORD0190,2025-03-23,South Australia,Adelaide Central,Home Appliances,Microwave,2,355.35,710.7,415.37,295.33,Casual,Card
+ORD0191,2025-09-12,Queensland,Cairns,Sports,Tennis Racket,6,602.94,3617.64,2279.67,1337.97,Casual,Cash
+ORD0192,2025-09-11,New South Wales,Sydney CBD,Fashion,Jeans,8,266.02,2128.16,1220.53,907.63,Member,Cash
+ORD0193,2025-07-07,Western Australia,Fremantle,Sports,Football,4,522.8,2091.2,1586.93,504.27,Casual,Cash
+ORD0194,2025-05-24,New South Wales,Parramatta,Electronics,Tablet,12,668.34,8020.08,3815.44,4204.64,Casual,Online
+ORD0195,2025-04-12,Western Australia,Perth CBD,Home Appliances,Microwave,13,454.11,5903.43,4695.44,1207.99,Casual,Card
+ORD0196,2025-08-22,Western Australia,Fremantle,Groceries,Organic Snacks,2,56.31,112.62,78.81,33.81,Casual,Online
+ORD0197,2025-06-03,Victoria,Ballarat,Groceries,Protein Bars,11,1118.33,12301.63,6907.19,5394.44,Casual,Online
+ORD0198,2025-12-11,Western Australia,Fremantle,Groceries,Milk,19,366.75,6968.25,5125.23,1843.02,Casual,Cash
+ORD0199,2025-01-27,New South Wales,Parramatta,Groceries,Coffee Beans,1,720.32,720.32,391.09,329.23,Member,Online
+ORD0200,2025-01-10,Western Australia,Fremantle,Home Appliances,Coffee Machine,5,987.78,4938.9,2641.17,2297.73,Member,Card
+ORD0201,2025-02-01,South Australia,Mount Gambier,Fashion,Jacket,14,831.7,11643.8,6912.13,4731.67,Casual,Online
+ORD0202,2025-09-30,Victoria,Ballarat,Home Appliances,Air Fryer,16,635.32,10165.12,5690.57,4474.55,Member,Cash
+ORD0203,2025-06-02,Queensland,Cairns,Sports,Yoga Mat,20,586.17,11723.4,9203.67,2519.73,Casual,Online
+ORD0204,2025-03-04,Victoria,Geelong,Sports,Tennis Racket,16,387.28,6196.48,3544.89,2651.59,Casual,Cash
+ORD0205,2025-08-15,Western Australia,Fremantle,Fashion,Backpack,5,355.64,1778.2,979.2,799.0,Member,Cash
+ORD0206,2025-02-25,Queensland,Cairns,Fashion,Jacket,7,995.26,6966.82,3796.2,3170.62,Casual,Card
+ORD0207,2025-06-19,Western Australia,Perth CBD,Home Appliances,Microwave,17,278.55,4735.35,2516.8,2218.55,Member,Cash
+ORD0208,2025-11-30,South Australia,Adelaide Central,Home Appliances,Microwave,18,1173.71,21126.78,10674.93,10451.85,Casual,Cash
+ORD0209,2025-01-20,Victoria,Geelong,Sports,Yoga Mat,2,1090.44,2180.88,1049.68,1131.2,Member,Online
+ORD0210,2025-01-05,Victoria,Geelong,Home Appliances,Microwave,13,947.67,12319.71,6347.23,5972.48,Casual,Card
+ORD0211,2025-09-16,Queensland,Cairns,Groceries,Organic Snacks,11,348.63,3834.93,3053.31,781.62,Casual,Card
+ORD0212,2025-04-06,South Australia,Mount Gambier,Home Appliances,Microwave,11,203.37,2237.07,1366.0,871.07,Casual,Online
+ORD0213,2025-09-21,New South Wales,Newcastle,Sports,Yoga Mat,19,812.54,15438.26,7990.94,7447.32,Casual,Cash
+ORD0214,2025-05-14,Queensland,Brisbane City,Fashion,Sneakers,6,1178.21,7069.26,4362.5,2706.76,Member,Card
+ORD0215,2025-12-01,South Australia,Adelaide Central,Fashion,Backpack,11,369.32,4062.52,2855.99,1206.53,Member,Cash
+ORD0216,2025-03-02,Queensland,Cairns,Home Appliances,Microwave,4,563.82,2255.28,1140.95,1114.33,Casual,Online
+ORD0217,2025-11-07,Queensland,Gold Coast,Groceries,Protein Bars,8,1149.26,9194.08,5676.09,3517.99,Casual,Online
+ORD0218,2025-11-02,Queensland,Gold Coast,Groceries,Milk,18,964.37,17358.66,12827.38,4531.28,Member,Online
+ORD0219,2025-10-02,New South Wales,Newcastle,Fashion,Backpack,3,1101.52,3304.56,1616.83,1687.73,Member,Online
+ORD0220,2025-09-19,Victoria,Melbourne Central,Sports,Fitness Tracker,4,819.55,3278.2,2297.76,980.44,Casual,Card
+ORD0221,2025-06-07,South Australia,Adelaide Central,Fashion,Jacket,17,504.36,8574.12,5550.62,3023.5,Casual,Online
+ORD0222,2025-02-02,New South Wales,Parramatta,Sports,Football,7,698.19,4887.33,2276.77,2610.56,Casual,Online
+ORD0223,2025-11-27,Western Australia,Perth CBD,Electronics,Headphones,2,351.64,703.28,360.78,342.5,Member,Online
+ORD0224,2025-06-28,South Australia,Mount Gambier,Fashion,Jeans,13,457.02,5941.26,4093.26,1848.0,Member,Online
+ORD0225,2025-06-02,New South Wales,Sydney CBD,Groceries,Milk,17,161.54,2746.18,2176.49,569.69,Member,Card
+ORD0226,2025-02-27,South Australia,Mount Gambier,Groceries,Milk,8,304.54,2436.32,1391.52,1044.8,Casual,Card
+ORD0227,2025-11-03,New South Wales,Newcastle,Fashion,Sneakers,8,255.24,2041.92,990.97,1050.95,Member,Cash
+ORD0228,2025-09-15,New South Wales,Sydney CBD,Electronics,Headphones,15,288.86,4332.9,2279.3,2053.6,Member,Card
+ORD0229,2025-06-04,Queensland,Brisbane City,Groceries,Coffee Beans,19,721.52,13708.88,9395.88,4313.0,Casual,Card
+ORD0230,2025-12-14,Victoria,Ballarat,Groceries,Protein Bars,14,367.6,5146.4,2425.68,2720.72,Member,Online
+ORD0231,2025-03-18,South Australia,Mount Gambier,Electronics,Smartphone,13,945.11,12286.43,6899.53,5386.9,Casual,Cash
+ORD0232,2025-01-30,Queensland,Gold Coast,Home Appliances,Coffee Machine,8,1020.72,8165.76,4534.1,3631.66,Member,Cash
+ORD0233,2025-07-09,Western Australia,Fremantle,Fashion,Jacket,13,299.0,3887.0,2025.78,1861.22,Member,Cash
+ORD0234,2025-04-07,New South Wales,Newcastle,Home Appliances,Microwave,9,458.83,4129.47,2732.63,1396.84,Member,Card
+ORD0235,2025-03-02,Western Australia,Perth CBD,Fashion,Jacket,11,370.79,4078.69,3133.04,945.65,Member,Card
+ORD0236,2025-08-27,South Australia,Adelaide Central,Groceries,Protein Bars,13,1099.0,14287.0,9189.79,5097.21,Casual,Cash
+ORD0237,2025-08-29,Western Australia,Fremantle,Sports,Yoga Mat,12,620.25,7443.0,4644.78,2798.22,Member,Online
+ORD0238,2025-05-14,Queensland,Brisbane City,Sports,Yoga Mat,14,64.4,901.6,678.39,223.21,Member,Card
+ORD0239,2025-10-09,Western Australia,Fremantle,Sports,Tennis Racket,7,402.54,2817.78,1642.61,1175.17,Member,Cash
+ORD0240,2025-10-07,Queensland,Gold Coast,Fashion,Jeans,15,210.2,3153.0,2296.15,856.85,Member,Card
+ORD0241,2025-07-31,South Australia,Adelaide Central,Groceries,Organic Snacks,17,50.25,854.25,637.56,216.69,Member,Card
+ORD0242,2025-11-13,Victoria,Ballarat,Home Appliances,Microwave,5,20.88,104.4,65.46,38.94,Casual,Card
+ORD0243,2025-05-21,Western Australia,Fremantle,Fashion,Sneakers,1,643.33,643.33,382.12,261.21,Member,Online
+ORD0244,2025-04-09,Western Australia,Fremantle,Electronics,Headphones,6,137.35,824.1,398.63,425.47,Member,Card
+ORD0245,2025-05-05,Western Australia,Fremantle,Sports,Yoga Mat,13,104.03,1352.39,1062.65,289.74,Casual,Online
+ORD0246,2025-11-23,Victoria,Geelong,Electronics,Laptop,3,492.28,1476.84,859.53,617.31,Casual,Card
+ORD0247,2025-02-18,New South Wales,Newcastle,Home Appliances,Microwave,16,1015.94,16255.04,10983.82,5271.22,Casual,Online
+ORD0248,2025-05-24,Western Australia,Perth CBD,Home Appliances,Vacuum Cleaner,19,575.85,10941.15,5101.82,5839.33,Member,Online
+ORD0249,2025-06-03,Western Australia,Perth CBD,Home Appliances,Air Fryer,1,1154.15,1154.15,756.5,397.65,Casual,Card
+ORD0250,2025-02-10,Victoria,Ballarat,Home Appliances,Coffee Machine,18,404.76,7285.68,5205.35,2080.33,Member,Online
+ORD0251,2025-01-16,Western Australia,Fremantle,Electronics,Laptop,14,286.25,4007.5,1910.0,2097.5,Casual,Cash
+ORD0252,2025-10-27,Queensland,Gold Coast,Fashion,Jacket,12,668.11,8017.32,4661.27,3356.05,Member,Online
+ORD0253,2025-12-31,South Australia,Adelaide Central,Groceries,Coffee Beans,8,858.6,6868.8,3288.19,3580.61,Member,Cash
+ORD0254,2025-07-04,Victoria,Ballarat,Fashion,Backpack,12,136.8,1641.6,741.7,899.9,Casual,Cash
+ORD0255,2025-01-14,Queensland,Brisbane City,Home Appliances,Microwave,6,522.87,3137.22,2023.33,1113.89,Casual,Card
+ORD0256,2025-05-30,New South Wales,Parramatta,Groceries,Organic Snacks,20,721.67,14433.4,8133.95,6299.45,Casual,Card
+ORD0257,2025-05-18,South Australia,Mount Gambier,Electronics,Tablet,19,630.11,11972.09,8259.07,3713.02,Member,Card
+ORD0258,2025-02-09,Queensland,Gold Coast,Fashion,Jacket,3,208.98,626.94,342.68,284.26,Casual,Cash
+ORD0259,2025-01-04,Queensland,Gold Coast,Home Appliances,Coffee Machine,20,743.84,14876.8,9078.59,5798.21,Member,Cash
+ORD0260,2025-06-14,South Australia,Mount Gambier,Groceries,Milk,11,533.87,5872.57,3527.74,2344.83,Member,Cash
+ORD0261,2025-12-22,Western Australia,Perth CBD,Fashion,Backpack,6,1157.84,6947.04,5481.59,1465.45,Casual,Online
+ORD0262,2025-04-13,South Australia,Adelaide Central,Sports,Fitness Tracker,9,981.63,8834.67,5190.61,3644.06,Member,Online
+ORD0263,2025-02-05,Western Australia,Perth CBD,Groceries,Organic Snacks,15,1132.14,16982.1,8888.04,8094.06,Casual,Online
+ORD0264,2025-02-07,South Australia,Mount Gambier,Home Appliances,Air Fryer,8,310.69,2485.52,1252.58,1232.94,Casual,Cash
+ORD0265,2025-01-19,South Australia,Mount Gambier,Groceries,Milk,18,612.87,11031.66,8517.96,2513.7,Casual,Online
+ORD0266,2025-11-28,Queensland,Cairns,Groceries,Organic Snacks,4,925.06,3700.24,2516.76,1183.48,Casual,Card
+ORD0267,2025-05-13,Western Australia,Perth CBD,Groceries,Milk,11,1159.2,12751.2,7659.13,5092.07,Member,Card
+ORD0268,2025-01-13,Victoria,Ballarat,Groceries,Protein Bars,15,455.2,6828.0,4179.23,2648.77,Member,Cash
+ORD0269,2025-06-09,South Australia,Adelaide Central,Sports,Fitness Tracker,3,148.12,444.36,346.26,98.1,Member,Cash
+ORD0270,2025-02-04,Queensland,Gold Coast,Home Appliances,Coffee Machine,12,576.63,6919.56,4174.97,2744.59,Casual,Cash
+ORD0271,2025-05-05,Queensland,Brisbane City,Electronics,Laptop,11,781.08,8591.88,5902.61,2689.27,Member,Online
+ORD0272,2025-11-19,Western Australia,Perth CBD,Groceries,Protein Bars,11,676.22,7438.42,5842.6,1595.82,Member,Cash
+ORD0273,2025-08-08,Victoria,Melbourne Central,Fashion,Jeans,1,887.49,887.49,673.68,213.81,Casual,Online
+ORD0274,2025-02-22,South Australia,Adelaide Central,Home Appliances,Vacuum Cleaner,9,905.27,8147.43,5972.52,2174.91,Member,Online
+ORD0275,2025-11-24,Western Australia,Perth CBD,Sports,Yoga Mat,7,554.49,3881.43,2103.05,1778.38,Casual,Online
+ORD0276,2025-03-30,Queensland,Cairns,Fashion,Jeans,19,145.94,2772.86,1589.39,1183.47,Casual,Online
+ORD0277,2025-07-11,Queensland,Cairns,Groceries,Organic Snacks,5,382.69,1913.45,1020.83,892.62,Member,Card
+ORD0278,2025-11-22,Victoria,Ballarat,Fashion,Jeans,20,174.06,3481.2,2034.06,1447.14,Member,Cash
+ORD0279,2025-01-28,Western Australia,Perth CBD,Groceries,Protein Bars,16,353.71,5659.36,2917.31,2742.05,Casual,Online
+ORD0280,2025-12-17,Queensland,Brisbane City,Fashion,Jacket,7,980.11,6860.77,5401.76,1459.01,Casual,Cash
+ORD0281,2025-01-17,South Australia,Mount Gambier,Fashion,Jeans,6,108.38,650.28,299.65,350.63,Member,Cash
+ORD0282,2025-09-19,Queensland,Brisbane City,Groceries,Coffee Beans,6,939.08,5634.48,3651.02,1983.46,Casual,Online
+ORD0283,2025-08-14,New South Wales,Newcastle,Electronics,Smartphone,18,989.71,17814.78,10304.1,7510.68,Member,Online
+ORD0284,2025-06-28,Western Australia,Perth CBD,Fashion,Sneakers,8,364.27,2914.16,2330.63,583.53,Casual,Cash
+ORD0285,2025-11-09,New South Wales,Parramatta,Electronics,Tablet,7,974.74,6823.18,4474.46,2348.72,Casual,Online
+ORD0286,2025-05-24,South Australia,Adelaide Central,Groceries,Protein Bars,7,978.1,6846.7,5011.13,1835.57,Casual,Online
+ORD0287,2025-07-30,Western Australia,Perth CBD,Sports,Yoga Mat,10,691.56,6915.6,5417.26,1498.34,Member,Card
+ORD0288,2025-07-21,New South Wales,Parramatta,Home Appliances,Vacuum Cleaner,8,184.03,1472.24,828.48,643.76,Member,Online
+ORD0289,2025-09-21,South Australia,Adelaide Central,Groceries,Coffee Beans,14,456.46,6390.44,3044.6,3345.84,Member,Cash
+ORD0290,2025-08-23,Queensland,Cairns,Sports,Fitness Tracker,16,399.47,6391.52,2881.72,3509.8,Member,Online
+ORD0291,2025-06-15,Queensland,Brisbane City,Groceries,Milk,7,1162.07,8134.49,6008.92,2125.57,Casual,Cash
+ORD0292,2025-02-20,Queensland,Gold Coast,Groceries,Protein Bars,19,1024.38,19463.22,14128.47,5334.75,Member,Card
+ORD0293,2025-12-19,South Australia,Adelaide Central,Electronics,Tablet,15,553.26,8298.9,6615.41,1683.49,Casual,Card
+ORD0294,2025-12-07,Victoria,Ballarat,Sports,Tennis Racket,9,121.07,1089.63,627.79,461.84,Member,Cash
+ORD0295,2025-04-20,Victoria,Melbourne Central,Fashion,Backpack,8,520.78,4166.24,2007.79,2158.45,Member,Card
+ORD0296,2025-08-05,South Australia,Adelaide Central,Home Appliances,Vacuum Cleaner,17,819.18,13926.06,6311.99,7614.07,Casual,Card
+ORD0297,2025-07-08,Victoria,Geelong,Electronics,Tablet,13,116.3,1511.9,1106.84,405.06,Member,Cash
+ORD0298,2025-06-29,Queensland,Brisbane City,Fashion,Jacket,5,91.41,457.05,295.78,161.27,Member,Cash
+ORD0299,2025-03-13,Victoria,Ballarat,Home Appliances,Coffee Machine,20,827.01,16540.2,12421.47,4118.73,Member,Card
+ORD0300,2025-02-13,New South Wales,Newcastle,Fashion,Backpack,14,384.26,5379.64,2684.12,2695.52,Casual,Online
+ORD0301,2025-09-23,Victoria,Ballarat,Groceries,Coffee Beans,1,1018.99,1018.99,693.36,325.63,Casual,Card
+ORD0302,2025-07-17,Western Australia,Perth CBD,Fashion,Backpack,2,942.72,1885.44,1372.27,513.17,Member,Cash
+ORD0303,2025-03-09,New South Wales,Sydney CBD,Fashion,Sneakers,17,1067.58,18148.86,8243.64,9905.22,Casual,Cash
+ORD0304,2025-02-04,South Australia,Mount Gambier,Sports,Tennis Racket,16,1145.8,18332.8,13192.8,5140.0,Member,Online
+ORD0305,2025-12-31,New South Wales,Parramatta,Home Appliances,Microwave,2,1138.93,2277.86,1342.32,935.54,Casual,Online
+ORD0306,2025-02-12,Western Australia,Fremantle,Fashion,Jeans,3,772.24,2316.72,1478.48,838.24,Member,Cash
+ORD0307,2025-12-24,Queensland,Brisbane City,Groceries,Protein Bars,5,648.3,3241.5,1901.97,1339.53,Member,Cash
+ORD0308,2025-12-08,South Australia,Adelaide Central,Electronics,Tablet,3,1110.31,3330.93,1634.14,1696.79,Member,Cash
+ORD0309,2025-07-10,Victoria,Melbourne Central,Electronics,Tablet,1,204.96,204.96,160.6,44.36,Casual,Card
+ORD0310,2025-12-31,Victoria,Ballarat,Sports,Football,1,408.66,408.66,245.3,163.36,Member,Cash
+ORD0311,2025-03-22,Western Australia,Perth CBD,Fashion,Jeans,17,438.55,7455.35,4658.58,2796.77,Member,Cash
+ORD0312,2025-01-24,Queensland,Brisbane City,Groceries,Organic Snacks,8,891.53,7132.24,3215.92,3916.32,Member,Card
+ORD0313,2025-06-14,South Australia,Mount Gambier,Fashion,Jacket,6,1118.08,6708.48,5032.16,1676.32,Casual,Card
+ORD0314,2025-04-25,Victoria,Geelong,Sports,Yoga Mat,3,690.13,2070.39,1018.2,1052.19,Member,Card
+ORD0315,2025-02-14,Western Australia,Perth CBD,Fashion,Sneakers,15,1040.58,15608.7,11249.73,4358.97,Casual,Cash
+ORD0316,2025-07-08,Western Australia,Fremantle,Electronics,Smartphone,7,357.0,2499.0,1810.72,688.28,Member,Cash
+ORD0317,2025-06-27,Western Australia,Fremantle,Home Appliances,Vacuum Cleaner,5,17.59,87.95,52.2,35.75,Member,Online
+ORD0318,2025-09-09,New South Wales,Parramatta,Electronics,Headphones,10,133.7,1337.0,849.58,487.42,Member,Cash
+ORD0319,2025-07-10,New South Wales,Sydney CBD,Sports,Football,2,1106.32,2212.64,1690.57,522.07,Casual,Online
+ORD0320,2025-10-18,South Australia,Adelaide Central,Groceries,Organic Snacks,17,168.88,2870.96,2115.86,755.1,Member,Online
+ORD0321,2025-06-17,New South Wales,Parramatta,Home Appliances,Vacuum Cleaner,10,320.58,3205.8,1796.06,1409.74,Casual,Online
+ORD0322,2025-02-24,Queensland,Gold Coast,Sports,Tennis Racket,3,1132.83,3398.49,1691.22,1707.27,Member,Card
+ORD0323,2025-06-07,Victoria,Geelong,Fashion,Backpack,14,153.68,2151.52,1237.99,913.53,Member,Cash
+ORD0324,2025-06-17,South Australia,Mount Gambier,Electronics,Laptop,6,971.04,5826.24,3242.16,2584.08,Member,Card
+ORD0325,2025-01-16,Victoria,Melbourne Central,Home Appliances,Air Fryer,13,621.02,8073.26,5546.44,2526.82,Casual,Card
+ORD0326,2025-01-07,South Australia,Mount Gambier,Groceries,Protein Bars,4,559.83,2239.32,1637.76,601.56,Member,Card
+ORD0327,2025-10-28,New South Wales,Sydney CBD,Home Appliances,Vacuum Cleaner,13,452.97,5888.61,3948.93,1939.68,Member,Online
+ORD0328,2025-06-19,Queensland,Brisbane City,Electronics,Laptop,7,1083.97,7587.79,4592.14,2995.65,Member,Card
+ORD0329,2025-01-16,New South Wales,Sydney CBD,Fashion,Sneakers,6,1109.72,6658.32,4005.68,2652.64,Casual,Cash
+ORD0330,2025-01-18,South Australia,Mount Gambier,Home Appliances,Air Fryer,7,1090.88,7636.16,4171.2,3464.96,Casual,Card
+ORD0331,2025-07-16,Western Australia,Perth CBD,Sports,Fitness Tracker,14,1060.51,14847.14,9170.5,5676.64,Member,Cash
+ORD0332,2025-10-06,Victoria,Geelong,Home Appliances,Vacuum Cleaner,18,955.87,17205.66,13700.72,3504.94,Casual,Cash
+ORD0333,2025-05-24,South Australia,Mount Gambier,Groceries,Coffee Beans,13,331.82,4313.66,1980.5,2333.16,Member,Card
+ORD0334,2025-12-03,New South Wales,Parramatta,Groceries,Coffee Beans,19,1199.53,22791.07,18025.3,4765.77,Member,Card
+ORD0335,2025-03-30,Victoria,Geelong,Groceries,Organic Snacks,8,695.07,5560.56,4414.71,1145.85,Casual,Cash
+ORD0336,2025-10-16,Victoria,Melbourne Central,Groceries,Coffee Beans,12,1097.64,13171.68,6057.29,7114.39,Casual,Online
+ORD0337,2025-04-30,Victoria,Ballarat,Home Appliances,Coffee Machine,18,377.77,6799.86,4227.15,2572.71,Member,Card
+ORD0338,2025-04-01,Western Australia,Perth CBD,Electronics,Headphones,1,404.76,404.76,269.14,135.62,Member,Cash
+ORD0339,2025-07-06,Queensland,Brisbane City,Electronics,Tablet,19,848.59,16123.21,8054.81,8068.4,Member,Online
+ORD0340,2025-08-12,New South Wales,Parramatta,Fashion,Sneakers,11,369.1,4060.1,2020.95,2039.15,Member,Online
+ORD0341,2025-12-19,South Australia,Mount Gambier,Home Appliances,Air Fryer,8,801.98,6415.84,4716.02,1699.82,Casual,Cash
+ORD0342,2025-11-05,Queensland,Brisbane City,Home Appliances,Microwave,19,476.01,9044.19,7217.26,1826.93,Member,Card
+ORD0343,2025-06-13,Queensland,Cairns,Home Appliances,Microwave,16,177.37,2837.92,2017.39,820.53,Member,Cash
+ORD0344,2025-05-12,Victoria,Ballarat,Electronics,Smartphone,15,23.56,353.4,184.97,168.43,Member,Cash
+ORD0345,2025-09-10,New South Wales,Newcastle,Electronics,Laptop,13,531.48,6909.24,4123.98,2785.26,Member,Cash
+ORD0346,2025-08-20,South Australia,Mount Gambier,Groceries,Milk,4,996.28,3985.12,2893.42,1091.7,Member,Card
+ORD0347,2025-07-12,New South Wales,Sydney CBD,Sports,Football,11,320.74,3528.14,1716.98,1811.16,Casual,Card
+ORD0348,2025-01-16,Victoria,Ballarat,Electronics,Laptop,11,716.9,7885.9,5242.35,2643.55,Casual,Online
+ORD0349,2025-12-23,South Australia,Adelaide Central,Groceries,Milk,6,73.73,442.38,250.34,192.04,Member,Cash
+ORD0350,2025-01-28,Western Australia,Fremantle,Sports,Yoga Mat,8,124.14,993.12,583.47,409.65,Casual,Card
+ORD0351,2025-02-19,Queensland,Brisbane City,Fashion,Sneakers,10,990.44,9904.4,6623.88,3280.52,Casual,Card
+ORD0352,2025-09-08,New South Wales,Sydney CBD,Home Appliances,Air Fryer,3,573.55,1720.65,843.86,876.79,Casual,Cash
+ORD0353,2025-01-23,Queensland,Brisbane City,Groceries,Milk,6,451.51,2709.06,1580.75,1128.31,Member,Cash
+ORD0354,2025-12-08,Queensland,Gold Coast,Fashion,Backpack,8,1006.12,8048.96,5211.59,2837.37,Member,Online
+ORD0355,2025-08-03,New South Wales,Sydney CBD,Sports,Fitness Tracker,19,280.74,5334.06,2514.18,2819.88,Casual,Online
+ORD0356,2025-10-20,Western Australia,Fremantle,Groceries,Protein Bars,16,365.63,5850.08,3440.91,2409.17,Member,Online
+ORD0357,2025-03-06,Western Australia,Perth CBD,Electronics,Headphones,6,1139.38,6836.28,3476.3,3359.98,Member,Card
+ORD0358,2025-02-04,New South Wales,Parramatta,Electronics,Headphones,7,1196.75,8377.25,5608.81,2768.44,Casual,Cash
+ORD0359,2025-12-25,New South Wales,Parramatta,Groceries,Milk,18,398.09,7165.62,3917.23,3248.39,Casual,Card
+ORD0360,2025-10-16,Western Australia,Fremantle,Electronics,Headphones,5,186.36,931.8,611.05,320.75,Member,Card
+ORD0361,2025-03-30,New South Wales,Parramatta,Groceries,Coffee Beans,14,324.32,4540.48,3083.78,1456.7,Casual,Card
+ORD0362,2025-09-01,Queensland,Gold Coast,Home Appliances,Coffee Machine,2,480.99,961.98,728.83,233.15,Member,Card
+ORD0363,2025-03-10,Queensland,Gold Coast,Electronics,Smartphone,10,380.03,3800.3,2831.21,969.09,Member,Card
+ORD0364,2025-08-15,Queensland,Cairns,Fashion,Backpack,9,877.27,7895.43,5224.74,2670.69,Member,Card
+ORD0365,2025-09-17,Victoria,Geelong,Fashion,Backpack,2,623.17,1246.34,630.2,616.14,Casual,Online
+ORD0366,2025-01-17,South Australia,Adelaide Central,Groceries,Organic Snacks,6,239.39,1436.34,1065.08,371.26,Member,Card
+ORD0367,2025-03-05,South Australia,Adelaide Central,Sports,Tennis Racket,9,448.34,4035.06,2471.38,1563.68,Casual,Online
+ORD0368,2025-10-10,New South Wales,Sydney CBD,Sports,Fitness Tracker,20,540.86,10817.2,8504.29,2312.91,Casual,Online
+ORD0369,2025-04-20,Queensland,Gold Coast,Home Appliances,Air Fryer,3,349.23,1047.69,613.21,434.48,Member,Online
+ORD0370,2025-03-09,Victoria,Ballarat,Home Appliances,Vacuum Cleaner,9,785.39,7068.51,4450.68,2617.83,Member,Cash
+ORD0371,2025-07-12,Victoria,Ballarat,Electronics,Tablet,9,733.93,6605.37,5152.53,1452.84,Casual,Cash
+ORD0372,2025-02-22,Queensland,Gold Coast,Sports,Tennis Racket,15,369.55,5543.25,3504.57,2038.68,Casual,Online
+ORD0373,2025-11-24,New South Wales,Newcastle,Sports,Yoga Mat,10,824.45,8244.5,5100.12,3144.38,Casual,Cash
+ORD0374,2025-07-26,Queensland,Gold Coast,Sports,Yoga Mat,7,188.42,1318.94,946.89,372.05,Member,Online
+ORD0375,2025-07-18,Queensland,Cairns,Home Appliances,Microwave,16,1196.99,19151.84,10357.3,8794.54,Casual,Cash
+ORD0376,2025-07-03,New South Wales,Newcastle,Groceries,Protein Bars,11,874.59,9620.49,5077.96,4542.53,Casual,Online
+ORD0377,2025-10-14,Western Australia,Fremantle,Home Appliances,Vacuum Cleaner,10,126.15,1261.5,624.17,637.33,Casual,Online
+ORD0378,2025-06-19,Victoria,Ballarat,Sports,Football,8,432.79,3462.32,2459.89,1002.43,Casual,Cash
+ORD0379,2025-04-10,Queensland,Gold Coast,Groceries,Coffee Beans,15,1022.94,15344.1,9431.83,5912.27,Member,Cash
+ORD0380,2025-06-25,Western Australia,Perth CBD,Fashion,Backpack,14,74.33,1040.62,779.41,261.21,Member,Card
+ORD0381,2025-11-21,South Australia,Mount Gambier,Home Appliances,Air Fryer,6,936.94,5621.64,3489.09,2132.55,Member,Cash
+ORD0382,2025-02-15,New South Wales,Sydney CBD,Fashion,Backpack,7,915.82,6410.74,3263.14,3147.6,Member,Cash
+ORD0383,2025-10-01,Victoria,Ballarat,Fashion,Jeans,13,520.54,6767.02,4175.86,2591.16,Member,Card
+ORD0384,2025-01-03,Victoria,Ballarat,Sports,Football,11,910.65,10017.15,6369.52,3647.63,Member,Online
+ORD0385,2025-02-03,Victoria,Melbourne Central,Sports,Yoga Mat,5,132.22,661.1,413.96,247.14,Casual,Card
+ORD0386,2025-09-08,New South Wales,Parramatta,Sports,Fitness Tracker,17,719.68,12234.56,6952.19,5282.37,Member,Cash
+ORD0387,2025-01-12,Queensland,Brisbane City,Home Appliances,Coffee Machine,1,281.82,281.82,198.54,83.28,Member,Card
+ORD0388,2025-01-25,Western Australia,Perth CBD,Electronics,Smartphone,2,456.48,912.96,615.44,297.52,Member,Online
+ORD0389,2025-12-26,New South Wales,Newcastle,Electronics,Laptop,4,505.96,2023.84,1180.08,843.76,Casual,Cash
+ORD0390,2025-11-07,Victoria,Melbourne Central,Electronics,Smartphone,14,797.38,11163.32,7611.92,3551.4,Casual,Online
+ORD0391,2025-04-13,Victoria,Geelong,Electronics,Laptop,10,145.67,1456.7,709.69,747.01,Member,Online
+ORD0392,2025-12-19,Queensland,Cairns,Home Appliances,Air Fryer,14,361.47,5060.58,2347.06,2713.52,Casual,Card
+ORD0393,2025-02-16,South Australia,Mount Gambier,Home Appliances,Microwave,1,809.24,809.24,621.02,188.22,Casual,Card
+ORD0394,2025-01-26,Western Australia,Perth CBD,Electronics,Smartphone,8,553.53,4428.24,3507.4,920.84,Casual,Cash
+ORD0395,2025-01-24,New South Wales,Sydney CBD,Electronics,Smartphone,12,963.9,11566.8,6471.02,5095.78,Member,Card
+ORD0396,2025-02-17,New South Wales,Sydney CBD,Home Appliances,Air Fryer,12,1074.49,12893.88,10112.43,2781.45,Casual,Online
+ORD0397,2025-09-02,Queensland,Gold Coast,Home Appliances,Microwave,13,486.3,6321.9,3855.02,2466.88,Casual,Online
+ORD0398,2025-10-30,South Australia,Adelaide Central,Electronics,Tablet,2,1178.07,2356.14,1756.56,599.58,Member,Cash
+ORD0399,2025-09-07,South Australia,Mount Gambier,Home Appliances,Coffee Machine,12,737.52,8850.24,6654.51,2195.73,Member,Cash
+ORD0400,2025-06-23,New South Wales,Parramatta,Fashion,Sneakers,3,321.32,963.96,539.8,424.16,Member,Online
